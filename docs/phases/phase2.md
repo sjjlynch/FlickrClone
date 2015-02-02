@@ -28,7 +28,7 @@ Api::PostsController (create, destroy, show, update)
 
 ### Views
 * PhotoShow
-* PhotoNew
+* PhotoForm
 * PhotoIndex
 * GalleryShow
 * GalleryIndex
