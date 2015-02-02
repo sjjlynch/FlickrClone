@@ -7,19 +7,19 @@
 ![gallery-show]
 
 ## New Session
-![new_session]
+![new-session]
 
 ## Gallery Index
-![post-show]
+![gallery-index]
 
 ## Photo Form
-![post-form]
+![photo-form]
 
 ## Photo Index
-![post-form]
+![photo-index]
 
 ## Search Show
-![search-results]
+![search-show]
 
 [new-session]: ./wireframes/new_session.png
 [photo-show]: ./wireframes/photo_show.png
