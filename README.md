@@ -1,22 +1,18 @@
-# Flux-capacitr
+# Flickr Clone
 
 [Heroku link][heroku]
 
-[heroku]: http://flux-capacitr.herokuapp.com
+[heroku]: https://flickr-cloned.herokuapp.com/
 
 ## Minimum Viable Product
-Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
+FlickrClone is a clone of Flickr built on Rails and Backbone. Basics:
 
-- [x] Create accounts
+- [x] Create user accounts
 - [x] Create sessions (log in)
-- [x] Create blogs
-- [x] Create blog posts
-- [x] Tag blog posts
-- [x] View blogs and posts
-- [x] Subscribe to blogs
-- [x] View a feed of subscribed blogs
-- [x] Search for blogs by title
-- [x] Search for posts by tag
+- [x] Upload photos
+- [x] Tag photos
+- [x] Create albums
+- [x] Search photos
 
 ## Design Docs
 * [View Wireframes][views]
