@@ -1,23 +1,26 @@
-# Phase 1: User Authentication, Basic Blogs and Posts
+# Phase 1: User Authentication, Add profiles, photos, galleries
 
 ## Rails
 ### Models
 * User
-* Blog
-* Post
+* Photo
+* Gallery
+* Tag
+* Tagging
 
 ### Controllers
 * UsersController (create, new)
 * SessionsController (create, new, destroy)
-* BlogsController (create, new, show)
-* PostsController (create, new, show)
+* PhotosController (create, new, show, index, destroy, update)
+* TagsController (create, new, destroy, update)
+* GalleryController (create, new, update, destroy, index)
 
 ### Views
 * users/new.html.erb
 * session/new.html.erb
-* blogs/new.html.erb
-* blogs/show.html.erb
-* posts/show.html.erb
+* photos/new.html.erb
+* photos/show.html.erb
+* galleries/index.html.erb
 
 ## Backbone
 ### Models

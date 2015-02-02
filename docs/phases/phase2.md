@@ -1,26 +1,36 @@
-# Phase 2: JSON API and First Backbone Views
+# Phase 2: Backbone Views
 
 ## Rails
 ### Models
 
 ### Controllers
-Api::BlogsController (create, destroy, index, show)
+Api::BlogController (create, destroy, index, show)
 Api::PostsController (create, destroy, show, update)
 
 ### Views
-* blogs/show.json.jbuilder
+* photos/show.json.jbuilder
+* photos/index.json.jbuilder
+* galleries/show.json.jbuilder
+* galleries/index.json.jbuilder
 
 ## Backbone
 ### Models
-* Blog (parses nested `posts` association)
-* Post
+* Photo
+* Gallery
+* User
+* Tag
 
 ### Collections
-* Blogs
-* Posts
+* Photos
+* Galleries
+* Users
+* Tag
 
 ### Views
-* BlogShow (composite view, contains PostShow subviews)
-* PostShow
+* PhotoShow
+* PhotoNew
+* PhotoIndex
+* GalleryShow
+* GalleryIndex
 
 ## Gems/Libraries

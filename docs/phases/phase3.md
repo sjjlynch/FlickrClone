@@ -1,9 +1,11 @@
-# Phase 3: Editing and Displaying Posts
+# Phase 3: Searching for Images and Galleries
 
 ## Rails
 ### Models
 
 ### Controllers
+PhotosController (search)
+GalleriesController (search)
 
 ### Views
 
@@ -11,11 +13,11 @@
 ### Models
 
 ### Collections
+* SearchPhotos
+* SearchGalleries
 
 ### Views
-* PostForm
+* SearchShow 
 
 ## Gems/Libraries
-* Filepicker
-* Markdown-js
-* Bootstrap Markdown
+
