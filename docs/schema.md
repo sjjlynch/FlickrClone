@@ -1,26 +1,20 @@
 # Schema Information
 
-## blogs
+
+## galleries
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
+photo_id    | integer   | not null, foreign key (references photos)
 owner_id    | integer   | not null, foreign key (references users)
-title       | string    | not null
 
-## followings
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
-blog_id     | integer   | not null, foreign key (references blogs)
-follower_id | integer   | not null, foreign key (references users)
-
-## posts
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
-author_id   | integer   | not null, foreign key (references users)
-title       | string    | not null
-body        | string    |
+## photos
+column name       | data type | details
+------------------|-----------|-----------------------
+id                | integer   | not null, primary key
+photographer_id   | integer   | not null, foreign key (references users)
+title             | string    | not null
+description       | text      | not null
 
 ## tags
 column name | data type | details
@@ -32,7 +26,7 @@ label       | string    | not null, unique
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-post_id     | integer   | not null, foreign key (references posts)
+photo_id     | integer   | not null, foreign key (references photo)
 tag_id      | integer   | not null, foreign key (references tags)
 
 ## users
