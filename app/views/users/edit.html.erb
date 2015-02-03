@@ -1,0 +1,14 @@
+<h1>Sign In</h1>
+<%= render 'layouts/errors' %>
+
+<form action="<%= user_url %>" method="post">
+  <input name="_method" type="hidden" value="patch">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label>Username
+    <input type="text" name="user[username]" value=""></label>
+  <label>Password
+      <input type="password" name="user[password]" value=""></label>
+  <label>Email
+      <input type="text" name="user[email]" value=""></label>
+      <input type="submit" value="Edit">
+</form>
