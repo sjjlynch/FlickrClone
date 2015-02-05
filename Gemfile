@@ -30,6 +30,12 @@ gem 'backbone-on-rails'
 
 gem 'bcrypt'
 
+gem 'filepicker-rails'
+
+gem 'bootstrap-sass'
+
+gem 'jquery-ui-rails'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

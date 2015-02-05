@@ -1,8 +1,14 @@
-Rails.application.routes.draw do
+FlickrClone::Application.routes.draw do
   root to: 'root#root'
   resources :users
-  resource :sessions, only: [:create, :new, :destroy]
+  resource :session, only: [:create, :new, :destroy]
+  namespace :api, defaults: {format: :json} do
+    resources :photos
+    # resources :galleries
+    # resources :tags
+  end
 end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

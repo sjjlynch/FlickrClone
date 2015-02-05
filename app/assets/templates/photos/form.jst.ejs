@@ -1,0 +1,14 @@
+<!-- <%= form_for @photo do |f| %> -->
+<!-- <div> -->
+<!-- <%= f.label :filepicker_url, "Upload Photo:" %> -->
+<div id = "upload_form">
+  <form id="add_new_photo" action="/photos" method="post">
+    <input type="hidden" name="photo[photographer_id]", value="<%=current_user.id%>"
+    <%= f.filepicker_field :filepicker_url, dragdrop: true %>
+    <input type="string" name="photo[filepicker_url]", value="">
+  </form>
+  <!-- </div> -->
+
+  <%= f.submit %>
+  <% end %>
+</div>

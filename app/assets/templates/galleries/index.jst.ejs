@@ -1,0 +1,12 @@
+
+<% current_user.galleries.each(function(gal){%>
+<li>
+<div class='gallery-title'>
+  <h4><%= photo.escape('title') %></h4>
+</div>
+
+<div class='gallery-description'>
+  <p><%= gallery.escape('description') %></p>
+</div>
+</li>
+<%});%>

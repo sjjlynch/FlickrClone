@@ -1,0 +1,8 @@
+<h3>Photos Index</h3>
+
+<% photos.each(function (photo) { %>
+    <div class='photo-title'>
+      <h4><%= photo.escape('title') %></h4>
+    </div>
+    <button class="delete" data-id="<%= photo.id %>">Delete Photo</button>
+<% }); %>
