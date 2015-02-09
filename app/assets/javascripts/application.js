@@ -11,10 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.serializeJSON
 //= require jquery_ujs
-// require boostrap
 //= require underscore
 //= require backbone
+//= require bootstrap.min
 //= require flickr_clone
 //= require_tree ../templates
 //= require_tree ./models

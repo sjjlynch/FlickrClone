@@ -1,7 +1,6 @@
 module Api
   class PhotosController < ApiController
-  before_filter :require_logged_in
-  # only: [:create, :destroy]
+  # before_action :require_logged_in
 
   def index
     @photos = current_user.photos
@@ -26,7 +25,6 @@ module Api
 
   def show
     @photo = Photo.find(params[:id])
-    # render json: @photo
     render :show
   end
 

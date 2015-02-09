@@ -4,6 +4,7 @@ FlickrClone::Application.routes.draw do
   resource :session, only: [:create, :new, :destroy]
   namespace :api, defaults: {format: :json} do
     resources :photos
+    resources :galleries
     # resources :galleries
     # resources :tags
   end

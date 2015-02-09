@@ -1,30 +1,39 @@
-FlickrClone.Views.photoForm = Backbone.View.extend({
-  // tagName: "form"
+FlickrClone.Views.PhotoForm = Backbone.View.extend({
+
   template: JST["photos/form"],
 
+  intialize: function(options){
+    this.model = options.model;
+    this.listenTo(this.model, "add sync change", this.render);
+  },
+
   events: {
-    "click button": "submit"
+    'submit form': 'submit'
   },
 
   render: function(){
+    $(window).load(function(){
+      if (this.$('.filepickbutton').length>1) {
+        this.$('.filepickbutton:last').remove();
+      }
+    });
     var content = this.template({photo: this.model});
     this.$el.html(content);
+    $filePickerInput = this.$("input[type=filepicker]");
+    filepicker.constructWidget($filePickerInput[0]);
     return this;
-  },
-
-  initialize: function(){
-    this.listenTo(this.model, "sync", this.render)
   },
 
   submit: function(event){
     event.preventDefault();
-    var attrs = this.$el.serializeJSON();
+    var $form = $(event.currentTarget);
+    var attr = $form.serializeJSON();
+    this.model.set(attr);
     var that = this;
-    this.model.set(attrs);
     this.model.save({}, {
       success: function(){
-        that.photos.add(that.model, {merge: true});
-        Backbone.history.navigate("/api/photos/" + that.model.id, {trigger: true});
+        that.collection.add(that.model, {merge: true});
+        Backbone.history.navigate("/photos/" + that.model.id, {trigger: true});
       }
     });
   }

@@ -8,7 +8,8 @@ class User < ActiveRecord::Base
   attr_reader :password
 
   has_many :photos, class_name: "Photo", foreign_key: "photographer_id"
-  
+  has_many :galleries, class_name: "Gallery", foreign_key: "photographer_id"
+
   def password=(password)
     @password = password
     self.password_digest = BCrypt::Password.create(password)

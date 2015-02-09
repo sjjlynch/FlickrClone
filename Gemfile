@@ -32,7 +32,7 @@ gem 'bcrypt'
 
 gem 'filepicker-rails'
 
-gem 'bootstrap-sass'
+# gem 'bootstrap-sass'
 
 gem 'jquery-ui-rails'
 

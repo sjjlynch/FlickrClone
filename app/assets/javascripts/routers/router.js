@@ -8,15 +8,31 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
   routes: {
     "" : "photoindex",
     "photos" : "photoindex",
-    "galleries/" : "galleriesIndex",
-    "photo/:id" : "photo",
-    "gallery/:id" : "galleryShow",
+    "photos/new" : "newphoto",
+    "galleries/new" : "newgallery",
+    "galleries" : "galleriesIndex",
+    "photos/:id" : "photo",
+    "galleries/:id" : "galleryshow",
   },
 
   photoindex: function(){
     var photos = this.photos;
     photos.fetch();
     var view = new FlickrClone.Views.PhotosIndex({collection: photos});
+    this._swapView(view);
+  },
+
+  newphoto: function(){
+    var photo = new FlickrClone.Models.Photo();
+    var photos = this.photos;
+    var view = new FlickrClone.Views.PhotoForm({model: photo, collection: photos});
+    this._swapView(view);
+  },
+
+  newgallery: function(){
+    var gallery = new FlickrClone.Models.Gallery();
+    var galleries = this.galleries;
+    var view = new FlickrClone.Views.GalleryForm({model: gallery, collection: galleries});
     this._swapView(view);
   },
 
@@ -30,6 +46,12 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
   photo: function(id){
     var photo = this.photos.getOrFetch(id);
     var view = new FlickrClone.Views.PhotoShow({model: photo});
+    this._swapView(view);
+  },
+
+  galleryshow: function(id){
+    var gallery = this.galleries.getOrFetch(id);
+    var view = new FlickrClone.Views.GalleryShow({model: gallery});
     this._swapView(view);
   },
 

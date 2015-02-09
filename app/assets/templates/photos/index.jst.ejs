@@ -1,8 +1,19 @@
 <h3>Photos Index</h3>
+<div class='photo-new'>
+  <a href="#photos/new">
+    <h2>Add a photo</h2>
+  </a>
+</div>
 
 <% photos.each(function (photo) { %>
     <div class='photo-title'>
-      <h4><%= photo.escape('title') %></h4>
+      <a href="#photos/<%= photo.id %>">
+        <h4><%= photo.escape('title') %></h4>
+      </a>
     </div>
-    <button class="delete" data-id="<%= photo.id %>">Delete Photo</button>
+    <a href="#photos/<%= photo.id %>">
+    <img src= <%= photo.escape("filepicker_url") %>>
+  </a>
+    <button class="delete btn btn-default" data-id="<%= photo.id %>">Delete Photo</button>
+
 <% }); %>

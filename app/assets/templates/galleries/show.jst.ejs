@@ -1,3 +1,16 @@
-<% gallery.photos.each(function(){ %>
-  <%=photo.render%>
-<% }) %>
+<h1>Gallery</h1>
+<div class='gallery-title'>
+  <h4><%= gallery.escape('title') %></h4>
+</div>
+
+
+<div class='gallery-description'>
+  <h4><%= gallery.escape("description") %></h4>
+</div>
+
+<div class='photos-window'>
+  <div id="photos">
+  </div>
+</div>
+
+<a href="#galleries">Galleries Index</a>

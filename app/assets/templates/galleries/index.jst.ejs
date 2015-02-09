@@ -1,12 +1,17 @@
-
-<% current_user.galleries.each(function(gal){%>
-<li>
-<div class='gallery-title'>
-  <h4><%= photo.escape('title') %></h4>
+<h3>Gallery Index</h3>
+<div class='gallery-new'>
+  <a href="#galleries/new">
+    <h2>Add a gallery</h2>
+  </a>
 </div>
-
-<div class='gallery-description'>
-  <p><%= gallery.escape('description') %></p>
-</div>
-</li>
-<%});%>
+<% galleries.each(function (gallery) { %>
+  <div class='gallery-title'>
+    <a href="#galleries/<%= gallery.id %>">
+      <h4><%= gallery.escape('title') %></h4>
+    </a>
+    <div class='photos-window'>
+      <div id="photos">
+      </div>
+    </div>
+  </div>
+  <% }); %>

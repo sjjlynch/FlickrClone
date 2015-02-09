@@ -2,7 +2,7 @@ FlickrClone.Views.PhotoShow = Backbone.View.extend({
   template: JST["photos/show"],
 
   initialize: function(){
-    this.listenTo(this.model, "sync", this.render);
+    this.listenTo(this.model, "change", this.render);
   },
 
   render: function(){
