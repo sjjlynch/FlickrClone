@@ -12,7 +12,7 @@ FlickrClone.Views.TaggingForm = Backbone.View.extend({
 
   render: function(){
     var content = this.template({
-      taggings: this.taggings
+      photo: this.photo
     });
     this.$el.html(content);
     return this;

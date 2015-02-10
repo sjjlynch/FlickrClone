@@ -1,9 +1,4 @@
 <h3>Gallery Index</h3>
-<div class='gallery-new'>
-  <a href="#galleries/new">
-    <h2>Add a gallery</h2>
-  </a>
-</div>
 <% galleries.each(function (gallery) { %>
   <div class='gallery-title'>
     <a href="#galleries/<%= gallery.id %>">
@@ -15,3 +10,9 @@
     </div>
   </div>
   <% }); %>
+  <br>
+<div class='gallery-new'>
+  <a href="#galleries/new">
+    <h3>Add a gallery</h3>
+  </a>
+</div>

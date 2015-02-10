@@ -1,15 +1,14 @@
-<h1>Photo</h1>
-<div class='photo-title'>
+<div class="photo-title" id="photo-title">
   <h4><%= photo.escape('title') %></h4>
 </div>
 
-<div class='photo-description'>
+<div class='photo-description' id="{{id}}">
   <h4><%= photo.escape("description") %></h4>
 </div>
 
 <img src= <%= photo.escape("filepicker_url")%> >
 
-<div class='add tagging window'>
+<div class='add-tagging-window'>
   <div id="taggings-form">
   </div>
 </div>

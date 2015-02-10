@@ -1360,3 +1360,137 @@ Load paths:
 [02/09/15 14:47:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (84057)] INFO : Doing deferred dependency-detection before Rack startup
 [02/09/15 14:47:59 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (84057)] ERROR : Invalid license key, please contact support@newrelic.com
 [02/09/15 14:47:59 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (84057)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Starting the New Relic agent in "development" environment.
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Environment: development
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : No known dispatcher detected.
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Application: development
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Installing ActiveJob instrumentation
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Installing ActiveRecord 4 instrumentation
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Installing Net instrumentation
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Installing deferred Rack instrumentation
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Installing Rack::Builder middleware instrumentation
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Installing Rails 3+ middleware instrumentation
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Installing Rails 4 Controller instrumentation
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Installing Rails 4 view instrumentation
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Installing Rails 4 Error instrumentation
+[02/09/15 21:27:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86541)] INFO : Finished instrumentation
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Starting the New Relic agent in "development" environment.
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Environment: development
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : No known dispatcher detected.
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Application: development
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Installing ActiveJob instrumentation
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Installing ActiveRecord 4 instrumentation
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Installing Net instrumentation
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Installing deferred Rack instrumentation
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Installing Rack::Builder middleware instrumentation
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Installing Rails 3+ middleware instrumentation
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Installing Rails 4 Controller instrumentation
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Installing Rails 4 view instrumentation
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Installing Rails 4 Error instrumentation
+[02/09/15 21:27:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86544)] INFO : Finished instrumentation
+[02/09/15 21:28:30 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (84057)] INFO : Starting Agent shutdown
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Starting the New Relic agent in "development" environment.
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Environment: development
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Dispatcher: webrick
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Application: development
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Installing ActiveJob instrumentation
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Installing ActiveRecord 4 instrumentation
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Installing Net instrumentation
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Installing deferred Rack instrumentation
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Installing Rack::Builder middleware instrumentation
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Installing Rails 3+ middleware instrumentation
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Installing Rails 4 Controller instrumentation
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Installing Rails 4 view instrumentation
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Installing Rails 4 Error instrumentation
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Finished instrumentation
+[02/09/15 21:28:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Doing deferred dependency-detection before Rack startup
+[02/09/15 21:29:15 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/09/15 21:29:15 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Starting the New Relic agent in "development" environment.
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Environment: development
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : No known dispatcher detected.
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Application: development
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Installing ActiveJob instrumentation
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Installing ActiveRecord 4 instrumentation
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Installing Net instrumentation
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Installing deferred Rack instrumentation
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Installing Rack::Builder middleware instrumentation
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Installing Rails 3+ middleware instrumentation
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Installing Rails 4 Controller instrumentation
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Installing Rails 4 view instrumentation
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Installing Rails 4 Error instrumentation
+[02/09/15 21:30:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86601)] INFO : Finished instrumentation
+[02/09/15 21:33:12 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86549)] INFO : Starting Agent shutdown
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Starting the New Relic agent in "development" environment.
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Environment: development
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : No known dispatcher detected.
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Application: development
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Installing ActiveJob instrumentation
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Installing ActiveRecord 4 instrumentation
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Installing Net instrumentation
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Installing deferred Rack instrumentation
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Installing Rack::Builder middleware instrumentation
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Installing Rails 3+ middleware instrumentation
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Installing Rails 4 Controller instrumentation
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Installing Rails 4 view instrumentation
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Installing Rails 4 Error instrumentation
+[02/09/15 21:33:49 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86697)] INFO : Finished instrumentation
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Starting the New Relic agent in "development" environment.
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Environment: development
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Dispatcher: webrick
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Application: development
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Installing ActiveJob instrumentation
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Installing ActiveRecord 4 instrumentation
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Installing Net instrumentation
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Installing deferred Rack instrumentation
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Installing Rack::Builder middleware instrumentation
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Installing Rails 3+ middleware instrumentation
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Installing Rails 4 Controller instrumentation
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Installing Rails 4 view instrumentation
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Installing Rails 4 Error instrumentation
+[02/09/15 21:33:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Finished instrumentation
+[02/09/15 21:33:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Doing deferred dependency-detection before Rack startup
+[02/09/15 21:33:59 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/09/15 21:33:59 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Starting the New Relic agent in "development" environment.
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Environment: development
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : No known dispatcher detected.
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Application: development
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Installing ActiveJob instrumentation
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Installing ActiveRecord 4 instrumentation
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Installing Net instrumentation
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Installing deferred Rack instrumentation
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Installing Rack::Builder middleware instrumentation
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Installing Rails 3+ middleware instrumentation
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Installing Rails 4 Controller instrumentation
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Installing Rails 4 view instrumentation
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Installing Rails 4 Error instrumentation
+[02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Finished instrumentation
