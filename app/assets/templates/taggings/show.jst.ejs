@@ -1,0 +1,9 @@
+<h2>Tags</h2>
+
+<div class='taggings window'>
+  <% taggings.each(function (tagging) { %>
+      <div class='photo-tag'>
+          <h3><%= tagging.escape('title') %></h3>
+      </div>
+  <% }); %>
+</div>
