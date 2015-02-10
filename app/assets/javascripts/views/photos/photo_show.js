@@ -12,6 +12,7 @@ FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
     var content = this.template({photo: this.model});
     this.$el.html(content);
     this.renderTaggingForm();
+    this.addTaggings();
     return this;
   },
 
@@ -20,5 +21,12 @@ FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
       photo: this.model
     });
     this.addSubview("#taggings-form", view);
+  },
+
+  addTaggings: function() {
+    var view = new FlickrClone.Views.TaggingShow({
+      photo: this.model
+    });
+    this.addSubview("#photo-taggings", view);
   }
 });

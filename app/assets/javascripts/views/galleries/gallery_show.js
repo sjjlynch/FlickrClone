@@ -17,6 +17,7 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
     this.$(".photo-title").replaceWith("");
     this.$(".photo-description").replaceWith("")
     this.$(".add-tagging-window").replaceWith("")
+    // this.$(".add-tagging-window").replaceWith("")
     this.$(".index-link").replaceWith("")
   },
 

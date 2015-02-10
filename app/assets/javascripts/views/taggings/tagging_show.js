@@ -3,7 +3,7 @@ FlickrClone.Views.TaggingShow = Backbone.View.extend({
 
   initialize: function(options){
     this.listenTo(this.model, "change add", this.render);
-    this.taggings = options.taggings;
+    this.photo = options.photo
   },
 
   render: function(){
