@@ -1,13 +1,17 @@
 <h1>Add Photo</h1>
 <form class="newphoto">
-  <!-- <input type="hidden" name="photo[photographer_id]" value=8></label> -->
+
   <input type="filepicker" class="btn btn-default filepickbutton" name="photo[filepicker_url]"
   data-fp-mimetype="image/*">
   <label>Title
     <input type="text" name="photo[title]" value="title"></label>
   <label>Description
-    <input type="textarea" name="photo[decription]" value="desc"></label>
-  <label>Gallery
-    <input type="text" name="photo[gallery_id]" value=""></label>
+    <input type="textarea" name="photo[description]" value="desc"></label>
+    <select name="photo[gallery_id]" id>
+        <option selected>Choose Gallery</option>
+      <% galleries.each(function (gallery) { %>
+        <option value="<%=gallery.id%>"><%= gallery.escape("title") %></option>
+      <% }); %>
+      </select>
     <input type="submit" value="Post Now" class="btn btn-default">
 </form>

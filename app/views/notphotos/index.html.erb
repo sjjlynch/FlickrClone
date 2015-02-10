@@ -1,0 +1,12 @@
+<%= link_to "New photo", new_photo_url %>
+<table>
+  <tr><th>Id</th><th>Filepicker.io Url</th><th>image</th></tr>
+
+  <% @photos.each do |a| %>
+
+  <tr><td><%= a.id %></td><td><%= a.filepicker_url %></td>
+    <td><%= filepicker_image_tag a.filepicker_url, w: 300, h: 300 %></td>
+    <td><%= filepicker_save_button "Download", a.filepicker_url, "image/png" %></tr>
+
+      <% end %>
+    </table>

@@ -2,11 +2,6 @@ FlickrClone.Views.GalleryForm = Backbone.View.extend({
 
   template: JST["galleries/form"],
 
-  intialize: function(options){
-    this.model = options.model;
-    this.listenTo(this.model, "add sync change", this.render);
-  },
-
   events: {
     'submit form': 'submit'
   },
@@ -22,7 +17,6 @@ FlickrClone.Views.GalleryForm = Backbone.View.extend({
     var $form = $(event.currentTarget);
     var attr = $form.serializeJSON();
     this.model.set(attr);
-    debugger
     var that = this;
     this.model.save({}, {
       success: function(){

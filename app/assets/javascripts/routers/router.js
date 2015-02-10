@@ -25,14 +25,24 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
   newphoto: function(){
     var photo = new FlickrClone.Models.Photo();
     var photos = this.photos;
-    var view = new FlickrClone.Views.PhotoForm({model: photo, collection: photos});
+    photos.fetch();
+    var galleries = this.galleries;
+    galleries.fetch();
+    var view = new FlickrClone.Views.PhotoForm({
+      model: photo,
+      collection: photos,
+      galleries: galleries
+    });
     this._swapView(view);
   },
 
   newgallery: function(){
     var gallery = new FlickrClone.Models.Gallery();
     var galleries = this.galleries;
-    var view = new FlickrClone.Views.GalleryForm({model: gallery, collection: galleries});
+    var view = new FlickrClone.Views.GalleryForm({
+      model: gallery,
+      collection: galleries
+    });
     this._swapView(view);
   },
 
@@ -51,7 +61,11 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
 
   galleryshow: function(id){
     var gallery = this.galleries.getOrFetch(id);
-    var view = new FlickrClone.Views.GalleryShow({model: gallery});
+    var galleries = this.galleries;
+    galleries.fetch();
+    var view = new FlickrClone.Views.GalleryShow({
+      model: gallery,
+      collection: galleries});
     this._swapView(view);
   },
 

@@ -1,11 +1,10 @@
 FlickrClone.Views.PhotoForm = Backbone.View.extend({
 
-  template: JST["photos/form"],
-
-  intialize: function(options){
-    this.model = options.model;
-    this.listenTo(this.model, "add sync change", this.render);
+  initialize: function(options){
+    this.galleries = options.galleries;
   },
+
+  template: JST["photos/form"],
 
   events: {
     'submit form': 'submit'
@@ -17,7 +16,11 @@ FlickrClone.Views.PhotoForm = Backbone.View.extend({
         this.$('.filepickbutton:last').remove();
       }
     });
-    var content = this.template({photo: this.model});
+    var content = this.template({
+      photo: this.model,
+      photos: this.collection,
+      galleries: this.galleries
+      });
     this.$el.html(content);
     $filePickerInput = this.$("input[type=filepicker]");
     filepicker.constructWidget($filePickerInput[0]);
