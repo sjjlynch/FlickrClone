@@ -1,6 +1,7 @@
 module Api
   class TaggingsController < ApiController
-
+    # before_action :require_logged_in
+    
     def new
     end
 
