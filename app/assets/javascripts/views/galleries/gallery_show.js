@@ -25,10 +25,6 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
     var content = this.template({gallery: this.model});
     this.$el.html(content);
     this.renderGalleryIndex();
-    // debugger
-    // this.subviews.each(function(subview){
-    //   this.$(".photo-title").attr("class", "hidden");
-    // });
     this.attachSubviews();
     return this;
     $(window).load(function(){

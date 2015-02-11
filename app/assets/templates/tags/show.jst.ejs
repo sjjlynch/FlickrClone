@@ -1,9 +1,5 @@
-<h2>Tags</h2>
-
-<div class='taggings-window'>
-  <% _(photo.get("tags")).each(function (tag) { %>
-      <div class='photo-tag'>
-          <h3><%= tag.label %></h3>
-      </div>
-  <% }); %>
+<div class='taggings-window container col-md-1'>
+    <div class='photo-tag well'>
+        <h3><%= tag.escape("label") %></h3>
+    </div>
 </div>

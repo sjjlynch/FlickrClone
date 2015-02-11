@@ -9,32 +9,21 @@ FlickrClone.Views.PhotoForm = Backbone.View.extend({
 
   events: {
     'submit form': 'submit',
-    'change select[name="photo[gallery_id]"]': 'addNewGallery'
+    'change select[name="photo[gallery_id]"]': 'maybeNewGalleryModal'
   },
 
-  addNewGallery: function(event){
-    // this.$('select[name="photo[gallery_id]"]').change(function(){
-      var val = $(event.currentTarget).val();
-      debugger
-      if (val==="New") {
-        console.log("New gallery");
-        this.$('form.newphoto').append(''); ///subview gallery form
-      }
-    // });
+  maybeNewGalleryModal: function(event){
+    var val = $(event.currentTarget).val();
+    if (val==="New") {
+      this.modalView = this.modalView ||
+      new FlickrClone.Views.PhotoGalleryModal({
+        model: this.model,
+        collection: this.collection
+      });
+      $('form.newphoto').prepend(this.modalView.render().$el);
+      this.modalView.delegateEvents();
+    }
   },
-
-  //
-  // renderGalleryForm: function() {
-  //   var that = this;
-  //   var newgallery = new FlickrClone.Models.Gallery();
-  //   var galleries = new FlickrClone.Collections.Galleries();
-  //   galleries.fetch();
-  //   var view = new FlickrClone.Views.GalleryForm({
-  //     model: newgallery,
-  //     collection: galleries
-  //   });
-  //   this.addSubview("#gallery-form", view);
-  // },
 
   render: function(){
     $(window).load(function(){

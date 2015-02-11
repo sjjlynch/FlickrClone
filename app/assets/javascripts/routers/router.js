@@ -65,7 +65,8 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
     galleries.fetch();
     var view = new FlickrClone.Views.GalleryShow({
       model: gallery,
-      collection: galleries});
+      collection: galleries
+    });
     this._swapView(view);
   },
 

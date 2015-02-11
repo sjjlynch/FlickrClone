@@ -7,7 +7,7 @@ FlickrClone.Collections.Photos = Backbone.Collection.extend({
     var photo = this.get(id);
     if (photo) {
       photo.fetch();
-      } else {
+    } else {
       photo = new FlickrClone.Models.Photo({id: id});
       photo.fetch({
         success: function () {
