@@ -19,27 +19,3 @@ FlickrClone.Collections.Galleries = Backbone.Collection.extend({
     return gallery;
   },
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // getOrFetchPhoto: function(galleryId, photoId){
-  //   var gallery = this.get(galleryId);
-  //   var photo;
-  //   if (gallery) {
-  //     photo = gallery.photos().getOrFetch(photoId);
-  //     return photo;
-  //   }
-  //   photo = new FlickrClone.Models.Photo({id: photoId})
-  //   photo.fetch();
-  //   return photo;
-  // }

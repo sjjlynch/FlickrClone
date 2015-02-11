@@ -1,25 +1,27 @@
 <div class="photo-title" id="photo-title">
-  <h4><%= photo.escape('title') %></h4>
-</div>
-
-<div class='photo-description' id="{{id}}">
-  <h4><%= photo.escape("description") %></h4>
-</div>
-
-<img src= <%= photo.escape("filepicker_url")%> >
-
-<div class='add-tagging-form'>
-  <div id="taggings-form">
+    <h4><%= photo.escape('title') %></h4>
   </div>
-</div>
 
-<div class='taggings window'>
-  <div id="photo-taggings">
+  <div class='photo-description' id="{{id}}">
+    <h4><%= photo.escape("description") %></h4>
   </div>
-</div>
 
-<div class='index-link'>
-  <a href="#photos">
-    <h4>Back to Photo Index</h4>
-  </a>
-</div>
+  <div class = "gallery-photo-display">
+    <img src= <%= photo.escape("filepicker_url")%> >
+  </div>
+
+  <div class='add-tagging-form'>
+    <div id="taggings-form">
+    </div>
+  </div>
+
+  <div class='taggings window'>
+    <div id="photo-taggings">
+    </div>
+  </div>
+
+  <div class='index-link'>
+    <a href="#photos">
+      <h4>Back to Photo Index</h4>
+    </a>
+  </div>

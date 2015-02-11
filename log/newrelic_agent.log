@@ -1494,3 +1494,116 @@ Load paths:
 [02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Installing Rails 4 view instrumentation
 [02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Installing Rails 4 Error instrumentation
 [02/09/15 21:39:51 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86780)] INFO : Finished instrumentation
+[02/10/15 11:14:45 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (86698)] INFO : Starting Agent shutdown
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Starting the New Relic agent in "development" environment.
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Environment: development
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Dispatcher: webrick
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Application: development
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Installing ActiveJob instrumentation
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Installing ActiveRecord 4 instrumentation
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Installing Net instrumentation
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Installing deferred Rack instrumentation
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Installing Rack::Builder middleware instrumentation
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Installing Rails 3+ middleware instrumentation
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Installing Rails 4 Controller instrumentation
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Installing Rails 4 view instrumentation
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Installing Rails 4 Error instrumentation
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Finished instrumentation
+[02/10/15 11:14:50 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Doing deferred dependency-detection before Rack startup
+[02/10/15 11:14:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/10/15 11:14:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[02/10/15 11:34:52 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 11:42:08 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 11:42:12 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 11:43:02 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:17:18 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:19:17 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:19:31 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:20:15 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:20:16 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:20:41 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:20:42 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:21:23 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:22:04 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:22:58 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:23:02 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:28:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:28:55 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:28:55 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:28:55 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:31:07 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:31:17 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:33:05 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:35:09 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:37:52 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:37:57 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:44:20 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:46:17 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:47:08 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:47:17 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:47:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 13:48:31 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 14:08:16 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 14:08:20 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Starting the New Relic agent in "development" environment.
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Environment: development
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : No known dispatcher detected.
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Application: development
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Installing ActiveJob instrumentation
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Installing ActiveRecord 4 instrumentation
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Installing Net instrumentation
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Installing deferred Rack instrumentation
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Installing Rack::Builder middleware instrumentation
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Installing Rails 3+ middleware instrumentation
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Installing Rails 4 Controller instrumentation
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Installing Rails 4 view instrumentation
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Installing Rails 4 Error instrumentation
+[02/10/15 14:09:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90639)] INFO : Finished instrumentation
+[02/10/15 14:09:42 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Starting the New Relic agent in "development" environment.
+[02/10/15 14:09:42 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/10/15 14:09:42 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/10/15 14:09:42 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/10/15 14:09:42 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Environment: development
+[02/10/15 14:09:42 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : No known dispatcher detected.
+[02/10/15 14:09:42 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Application: development
+[02/10/15 14:09:42 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/10/15 14:09:42 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Installing ActiveJob instrumentation
+[02/10/15 14:09:43 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Installing ActiveRecord 4 instrumentation
+[02/10/15 14:09:43 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Installing Net instrumentation
+[02/10/15 14:09:43 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Installing deferred Rack instrumentation
+[02/10/15 14:09:43 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Installing Rack::Builder middleware instrumentation
+[02/10/15 14:09:43 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Installing Rails 3+ middleware instrumentation
+[02/10/15 14:09:43 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Installing Rails 4 Controller instrumentation
+[02/10/15 14:09:43 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Installing Rails 4 view instrumentation
+[02/10/15 14:09:43 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Installing Rails 4 Error instrumentation
+[02/10/15 14:09:43 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90644)] INFO : Finished instrumentation
+[02/10/15 14:09:53 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (89550)] INFO : Starting Agent shutdown
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Starting the New Relic agent in "development" environment.
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Environment: development
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Dispatcher: webrick
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Application: development
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Installing ActiveJob instrumentation
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Installing ActiveRecord 4 instrumentation
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Installing Net instrumentation
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Installing deferred Rack instrumentation
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Installing Rack::Builder middleware instrumentation
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Installing Rails 3+ middleware instrumentation
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Installing Rails 4 Controller instrumentation
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Installing Rails 4 view instrumentation
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Installing Rails 4 Error instrumentation
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Finished instrumentation
+[02/10/15 14:09:56 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] INFO : Doing deferred dependency-detection before Rack startup
+[02/10/15 14:09:58 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/10/15 14:09:58 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (90678)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.

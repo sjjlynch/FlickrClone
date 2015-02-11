@@ -8,10 +8,13 @@
   <label>Description
     <input type="textarea" name="photo[description]" value="desc"></label>
     <select name="photo[gallery_id]" id>
-        <option selected>Choose Gallery</option>
+        <option selected>Select Gallery</option>
+        <option value="New">Create New Gallery</option>
       <% galleries.each(function (gallery) { %>
         <option value="<%=gallery.id%>"><%= gallery.escape("title") %></option>
       <% }); %>
       </select>
     <input type="submit" value="Post Now" class="btn btn-default">
 </form>
+
+<div class="preview"></div>

@@ -1,31 +1,37 @@
 FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
   template: JST["photos/show"],
-  // template: function()
-  // if gallery_show
-  //   JST["photos/show_photo"]
 
-  initialize: function(){
+  initialize: function(options){
     this.listenTo(this.model, "change", this.render);
+    // this.listenTo(this.model.taggings(), "add", this.addTag);
+    // var showAll = options.showAll;
   },
 
   render: function(){
     var content = this.template({photo: this.model});
     this.$el.html(content);
-    this.renderTaggingForm();
-    this.addTaggings();
+    this.renderTagForm();
+    this.addTags();
     return this;
   },
 
-  renderTaggingForm: function() {
-    var view = new FlickrClone.Views.TaggingForm({
-      photo: this.model
+  renderTagForm: function() {
+    var that = this;
+    var newtag = new FlickrClone.Models.Tag();
+    var tags = new FlickrClone.Collections.Tags();
+    tags.fetch();
+    var view = new FlickrClone.Views.TagForm({
+      model: newtag,
+      collection: tags,
+      photo: that.model
     });
     this.addSubview("#taggings-form", view);
   },
 
-  addTaggings: function() {
-    var view = new FlickrClone.Views.TaggingShow({
-      photo: this.model
+  addTags: function() {
+    var that = this;
+    var view = new FlickrClone.Views.TagShow({
+      photo: that.model
     });
     this.addSubview("#photo-taggings", view);
   }

@@ -34,6 +34,10 @@ module Api
     render json: {}
   end
 
+  # def photosearch
+  # end
+
+
   # def edit
   #   @photo = Photo.find(params[:id])
   #   render json: @photo

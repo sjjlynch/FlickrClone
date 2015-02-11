@@ -5,6 +5,9 @@ FlickrClone::Application.routes.draw do
   namespace :api, defaults: {format: :json} do
     resources :photos
     resources :galleries
+    resources :tags
+    resources :taggings
+    # resources :search
     # resources :galleries
     # resources :tags
   end
