@@ -33,6 +33,7 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
 
     var view = new FlickrClone.Views.PhotoShow({
       model: photo,
+      url: photo.escape("filepicker_url")
       // showAll: false
     });
     this.addSubview("#photos", view);
@@ -42,17 +43,16 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
     this.$(".index-link").replaceWith("")
   },
 
-
   render: function(){
     var view = this;
     var content = this.template({gallery: this.model});
     this.$el.html(content);
     this.renderGalleryIndex();
     this.attachSubviews();
+    setTimeout(function(){
+      this.$("#mygallery").justifiedGallery();
+    }.bind(this), 10);
     return this;
-    $(window).load(function(){
-      this.$(".photo-title").set("class", "hidden");
-    });
   },
 
   renderGalleryIndex: function() {

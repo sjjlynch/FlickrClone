@@ -10,9 +10,9 @@
             <h4><%= photo.escape("description") %></h4>
           </div>
 
-          <div class = "gallery-photo-display">
+          <a href="<%= photo.escape("filepicker_url")%>" class='photos-window gallery-photo-display'>
             <img class="img-responsive" src= <%= photo.escape("filepicker_url")%> >
-          </div>
+          </a>
 
           <div class='add-tagging-form'>
             <div id="taggings-form">

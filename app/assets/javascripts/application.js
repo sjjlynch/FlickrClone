@@ -17,6 +17,7 @@
 //= require backbone
 //= require bootstrap
 //= require bootstrap.min
+//= require jquery.justifiedGallery.min
 //= require masonry.pkgd.min
 //= require typeahead
 //= require flickr_clone

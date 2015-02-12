@@ -6,6 +6,7 @@ FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
     this.listenTo(this.model.tags(), "add", this.addTag);
     this.listenTo(this.model, "sync", this.render);
     this.addTagForm();
+    this.url = options.url;
 
     // var showAll = options.showAll;
   },
