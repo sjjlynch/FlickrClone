@@ -8,7 +8,8 @@ window.FlickrClone = {
     // alert('Hello from Backbone!');
     new FlickrClone.Routers.Router({
       $rootEl: $("#content"),
-      $searchEl: $('.search-wrapper')
+      $searchEl: $('.search-wrapper'),
+      $galdropEl: $("#galleries-dropdown-menu")
     });
     Backbone.history.start();
   }

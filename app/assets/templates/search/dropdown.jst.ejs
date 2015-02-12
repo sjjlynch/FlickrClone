@@ -1,0 +1,9 @@
+<a href="#galleries" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Galleries<span class="caret"></span></a>
+  <ul class="dropdown-menu" role="menu">
+        <li id="bolded-gall-title"><a href="#galleries"><p id="bolded-gallery-title">See all galleries</p></a></li>
+        <li class="divider"></li>
+    <% galleries.each(function (gallery) { %>
+        <li><a href="#galleries/<%= gallery.id %>"><%=gallery.escape("title")%></a></li>
+        <li class="divider"></li>
+    <% }); %>
+  </ul>

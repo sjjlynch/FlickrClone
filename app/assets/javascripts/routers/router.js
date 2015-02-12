@@ -2,9 +2,11 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
   initialize: function(options){
     this.$rootEl = options.$rootEl;
     this.$searchEl = options.$searchEl;
+    this.$galdropEl = options.$galdropEl;
     this.photos = new FlickrClone.Collections.Photos();
     this.galleries = new FlickrClone.Collections.Galleries();
     this.searchSetup();
+    this.galleriesDropdown();
   },
 
   routes: {
@@ -97,7 +99,14 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
         that.$searchEl.html(view.render().$el)
       }
     });
-    //create a search form view
+  },
+
+  galleriesDropdown: function () {
+    var galleries = new FlickrClone.Collections.Galleries();
+    galleries.fetch();
+    var view = new FlickrClone.Views.GalleriesDropdown({collection: galleries});
+    // this.$galdropEl.html(view.render().$el);
+    $('#nav-list').append(view.render().$el);
   }
 
 });
