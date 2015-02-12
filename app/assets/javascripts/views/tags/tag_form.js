@@ -26,6 +26,7 @@ FlickrClone.Views.TagForm = Backbone.View.extend({
     var that = this;
     this.model.save({photo_id: this.photo.escape("id")}, {
       success: function(){
+        debugger
         that.collection.add(that.model, {merge: true});
       }
   });

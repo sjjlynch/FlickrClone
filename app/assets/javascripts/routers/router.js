@@ -1,8 +1,10 @@
 FlickrClone.Routers.Router = Backbone.Router.extend({
   initialize: function(options){
     this.$rootEl = options.$rootEl;
+    this.$searchEl = options.$searchEl;
     this.photos = new FlickrClone.Collections.Photos();
     this.galleries = new FlickrClone.Collections.Galleries();
+    this.searchSetup();
   },
 
   routes: {
@@ -11,6 +13,7 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
     "photos/new" : "newphoto",
     "galleries/new" : "newgallery",
     "galleries" : "galleriesIndex",
+    "photos/search/:params": "searchphotos",
     "photos/:id" : "photo",
     "galleries/:id" : "galleryshow",
   },
@@ -22,13 +25,21 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
     this._swapView(view);
   },
 
+  searchphotos: function (params) {
+    console.log("whoopeee");
+    var photos = this.photos;
+    photos.fetch();
+    var view = new FlickrClone.Views.SearchShow({ params: params });
+    this.swapView(view);
+  },
+
   newphoto: function(){
     var photo = new FlickrClone.Models.Photo();
     var photos = this.photos;
     photos.fetch();
     var galleries = this.galleries;
     galleries.fetch();
-    var view = new FlickrClone.Views.PhotoForm({
+    var view = new FlickrClone.Views.PhotoFormModal({ ///add Modal
       model: photo,
       collection: photos,
       galleries: galleries
@@ -74,6 +85,19 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
     this._currentView && this._currentView.remove();
     this._currentView = view;
     this.$rootEl.html(view.render().$el);
+  },
+
+  searchSetup: function () {
+    var that = this;
+    $.ajax({
+      url: "/api/photos/titles",
+      type: "get",
+      success: function(data){
+        var view = new FlickrClone.Views.SearchSetup({collection: data});
+        that.$searchEl.html(view.render().$el)
+      }
+    });
+    //create a search form view
   }
 
 });

@@ -7,4 +7,8 @@ class Photo < ActiveRecord::Base
   has_many :tags, through: :taggings, source: :tag
   # attr_accessible :filepicker_url
 
+  def self.search(params)
+    photos_by_title = Photo.where(title: params[:search_query])
+  end
+
 end

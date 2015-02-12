@@ -3,7 +3,30 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
   template: JST["galleries/show"],
 
   initialize: function(options){
+    var that = this;
+    this.model.photos().each(function(photo){
+      that.addPhoto(photo)
+    });
     this.listenTo(this.model.photos(), "add", this.addPhoto);
+  },
+
+  events: {
+    'click button': 'photoModal'
+  },
+
+  photoModal: function(){
+    var photo = new FlickrClone.Models.Photo();
+    var photos = new FlickrClone.Collections.Photos();
+    var galleries = this.collection;
+    galleries.fetch();
+    this.modalView = this.modalView ||
+    new FlickrClone.Views.PhotoFormModal({
+       model: photo,
+       collection: photos,
+       galleries: galleries
+       });
+    $('body').prepend(this.modalView.render().$el);
+    this.modalView.delegateEvents();
   },
 
   addPhoto: function (photo) {

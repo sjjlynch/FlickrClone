@@ -16,5 +16,24 @@ FlickrClone.Collections.Photos = Backbone.Collection.extend({
       });
     }
     return photo;
+  },
+
+  getOrFetchbyTitle: function(title){
+    var photos = this;
+    var photo = this.get(title);
+    if (photo) {
+      photo.fetch();
+    } else {
+      photo = new FlickrClone.Models.Photo({title: title});
+      photo.fetch({
+        success: function () {
+          photos.add(photo);
+        }
+      });
+    }
+    return photo;
   }
+
+
+
 });

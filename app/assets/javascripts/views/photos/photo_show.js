@@ -11,10 +11,17 @@ FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
   },
 
   addTag: function(tag) {
+    var tags = new FlickrClone.Collections.Tags();
+    tags.fetch();
     var view = new FlickrClone.Views.TagShow({
-      model: tag
+      model: tag,
+      collection: tags
     });
     this.addSubview("#photo-taggings", view);
+    if (this.tagFormView) {
+      this.removeSubview("#taggings-form", this.tagFormView);
+    }
+    this.addTagForm();
   },
 
   render: function(){
@@ -27,14 +34,13 @@ FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
   addTagForm: function() {
     var that = this;
     var newtag = new FlickrClone.Models.Tag();
-    var tags = new FlickrClone.Collections.Tags();
-    tags.fetch();
-    var view = new FlickrClone.Views.TagForm({
+    var tags = this.model.tags();
+    this.tagFormView = new FlickrClone.Views.TagForm({
       model: newtag,
       collection: tags,
       photo: that.model
     });
-    this.addSubview("#taggings-form", view);
+    this.addSubview("#taggings-form", this.tagFormView);
   }
 
 });

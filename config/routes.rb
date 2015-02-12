@@ -3,10 +3,18 @@ FlickrClone::Application.routes.draw do
   resources :users
   resource :session, only: [:create, :new, :destroy]
   namespace :api, defaults: {format: :json} do
-    resources :photos
+    resources :photos do
+      collection do
+        get 'titles', to: 'photos#titles', as: "photo_search"
+      end
+    end
     resources :galleries
-    resources :tags
-    resources :taggings
+    resources :tags #do
+    #   collection do
+    #     get '/search', to "photos#search"
+    #   end
+    # end
+
     # resources :search
     # resources :galleries
     # resources :tags

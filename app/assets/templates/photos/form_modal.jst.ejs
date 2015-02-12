@@ -1,8 +1,34 @@
-<h3>Create New Gallery</h3>
-<form class="newgallery">
+<div class="modal-background">
+<!-- <div class="modal-content well"> -->
+<div class="vertical-alignment-helper">
+<div class="modal-dialog vertical-align-center">
+<div class="modal-content">
+<h2>Add Photo</h2>
+<form class="newphoto">
+
+  <input type="filepicker" class="btn btn-default filepickbutton" name="photo[filepicker_url]"
+  data-fp-mimetype="image/*">
   <label>Title
-    <input type="text" name="gallery[title]" value="gallery title"></label>
+    <input type="text" name="photo[title]" value="title"></label>
     <label>Description
-      <input type="textarea" name="gallery[description]" value="gallery description"></label>
-      <input type="submit" value="Create" class="hidden">
-</form>
+      <input type="textarea" name="photo[description]" value="desc"></label>
+      <select name="photo[gallery_id]" id>
+        <option selected>Select Gallery</option>
+        <option value="New">Create New Gallery</option>
+        <% galleries.each(function (gallery) { %>
+          <option value="<%=gallery.id%>"><%= gallery.escape("title") %></option>
+          <% }); %>
+        </select>
+        <input type="submit" value="Post Now" class="btn btn-default">
+      </form>
+
+      <div class="preview"></div>
+
+      <div class="end-modal button">
+        <button type="button" class="btn btn-default end-modal">Exit</button>
+      </div>
+
+</div>
+</div>
+</div>
+</div>

@@ -1,20 +1,27 @@
-<div class='gallery-gallery-title'>
-  <h4><%= gallery.escape('title') %></h4>
+<div class="photo-modal-button">
+  <button type="button" class="btn btn-default">Add Photo</button>
 </div>
 
 
-<div class='gallery-description'>
-  <h4><%= gallery.escape("description") %></h4>
-</div>
+  <div class='gallery-gallery-title'>
+    <h4><%= gallery.escape('title') %></h4>
+  </div>
 
-<div class='photos-window'>
-  <div id="photos">
+  <div class='gallery-description'>
+    <h4><%= gallery.escape("description") %></h4>
+  </div>
+
+<div class="gallery-photo-container js-masonry" data-masonry-options='{ "columnWidth": 200, "itemSelector": ".item" }'>
+
+  <div class='photos-window'>
+    <div id="photos" class="img-responsive">
+    </div>
+  </div>
+
+  <div class='gallery-index-window'>
+    <div id="gallery-index">
+    </div>
   </div>
 </div>
 
-<div class='gallery-index-window'>
-  <div id="gallery-index">
-  </div>
-</div>
-
-<a href="#galleries">Galleries Index</a>
+  <a href="#galleries">Galleries Index</a>

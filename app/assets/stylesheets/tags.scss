@@ -9,9 +9,15 @@
 .photo-tag {
   color: gray;
   opacity: 0.7;
+  border-radius: 30px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  float: left;
+
+.tag-text {
+  // position: fixed;
   border-radius: 15px;
-  padding-left: 5px;
-  padding-bottom: 5px;
+}
 
 }
 

@@ -8,9 +8,10 @@ module Api
 
     def new
     end
-
-    # def tagsearch
-    #   # @tag = Tag.find_by_label
+    # 
+    # def search
+    #   @photos = Tag.search(params)
+    #   render json: @photos
     # end
 
     def create

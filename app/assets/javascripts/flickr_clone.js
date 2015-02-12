@@ -7,7 +7,8 @@ window.FlickrClone = {
   initialize: function() {
     // alert('Hello from Backbone!');
     new FlickrClone.Routers.Router({
-      $rootEl: $("#content")
+      $rootEl: $("#content"),
+      $searchEl: $('.search-wrapper')
     });
     Backbone.history.start();
   }

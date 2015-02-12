@@ -34,8 +34,15 @@ module Api
     render json: {}
   end
 
-  # def photosearch
-  # end
+  def search
+    @photos = Photo.search(params)
+    render :index
+  end
+
+  def titles
+    render json: Photo.where("? IS NULL OR title ~ ?", params[:title], params[:title]).pluck(:title, :id)
+  end
+
 
 
   # def edit

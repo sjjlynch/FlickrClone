@@ -15,3 +15,57 @@
 // Place all the styles related to the Photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.modal-background {
+  background-color: rgba(0, 0, 0, .75);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1031;
+}
+.modal-content {
+  width: 50%;
+  opacity: 100%;
+  position: absolute;
+  margin-top: 40%;
+  border-radius: 15px;
+  left: 25%;
+  z-index: 1032;
+  background-color: rgb(240, 240, 240);
+  padding: 15px;
+}
+
+
+// .card-modal-dismiss {
+//   float: right;
+//   font-size: 130%;
+//   &:hover {
+//     text-decoration: none;
+//   }
+// }
+
+
+////
+// .vertical-alignment-helper {
+//   display:table;
+//   height: 100%;
+//   width: 100%;
+//   // pointer-events:none;
+// }
+// .vertical-align-center {
+//   /* To center vertically */
+//   display: table-cell;
+//   vertical-align: middle;
+//   pointer-events:none;
+// }
+// .modal-content {
+//   /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+//   width:inherit;
+//   height:inherit;
+//   /* To center horizontally */
+//   margin: 0 auto;
+//   padding: 30px;
+// }

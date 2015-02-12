@@ -16,6 +16,8 @@
 //= require underscore
 //= require backbone
 //= require bootstrap.min
+//= require masonry.pkgd.min
+//= require typeahead
 //= require flickr_clone
 //= require_tree ../templates
 //= require_tree ./models
