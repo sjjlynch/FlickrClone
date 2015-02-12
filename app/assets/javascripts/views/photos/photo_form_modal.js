@@ -11,12 +11,21 @@ FlickrClone.Views.PhotoFormModal = Backbone.CompositeView.extend({
     'submit form': 'submit',
     // 'change select[name="photo[gallery_id]"]': 'maybeNewGalleryModal'
     'click .end-modal': 'endmodal',
-    'click .modal-background' : 'endmodal'
+    // 'click .modal-background' : 'endmodal'
+    'change input[type="filepicker"]': 'maybeRenderPreview'
   },
 
   endmodal: function (event) {
     event.preventDefault();
     this.remove();
+  },
+
+  maybeRenderPreview: function(event) {
+    event.preventDefault();
+    if (this.$("input[type=filepicker]")) {
+      var url = this.$("input[type=filepicker]").val()
+      this.$(".photo-preview-image").attr("src", url);
+    }
   },
 
   render: function(){
@@ -38,6 +47,7 @@ FlickrClone.Views.PhotoFormModal = Backbone.CompositeView.extend({
 
   submit: function(event){
     event.preventDefault();
+    this.remove();
     var $form = $(event.currentTarget);
     var attr = $form.serializeJSON();
     this.model.set(attr);

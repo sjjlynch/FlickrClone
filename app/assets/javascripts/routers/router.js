@@ -10,7 +10,7 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
   routes: {
     "" : "photoindex",
     "photos" : "photoindex",
-    "photos/new" : "newphoto",
+    // "photos/new" : "newphoto",
     "galleries/new" : "newgallery",
     "galleries" : "galleriesIndex",
     "photos/search/:params": "searchphotos",

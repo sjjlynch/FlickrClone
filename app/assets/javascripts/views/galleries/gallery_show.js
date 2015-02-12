@@ -11,7 +11,7 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
   },
 
   events: {
-    'click button': 'photoModal'
+    'click button.modal-btn': 'photoModal'
   },
 
   photoModal: function(){

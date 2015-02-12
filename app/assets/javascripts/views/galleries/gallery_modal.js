@@ -1,9 +1,16 @@
-FlickrClone.Views.GalleryForm = Backbone.View.extend({
+FlickrClone.Views.GalleryFormModal = Backbone.View.extend({
 
-  template: JST["galleries/form"],
+  template: JST["galleries/form_modal"],
 
   events: {
-    'submit form': 'submit'
+    'submit form': 'submit',
+    'click .end-modal': 'endmodal',
+    // 'click .modal-background' : 'endmodal'
+  },
+
+  endmodal: function (event) {
+    event.preventDefault();
+    this.remove();
   },
 
   render: function(){
@@ -14,6 +21,7 @@ FlickrClone.Views.GalleryForm = Backbone.View.extend({
 
   submit: function(event){
     event.preventDefault();
+    this.remove();
     var $form = $(event.currentTarget);
     var attr = $form.serializeJSON();
     this.model.set(attr);

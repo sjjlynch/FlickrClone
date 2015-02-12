@@ -18,7 +18,7 @@ FlickrClone.Views.GalleriesIndex = Backbone.CompositeView.extend({
   galleryModal: function(){
     var gallery = new FlickrClone.Models.Gallery();
     this.modalView = this.modalView ||
-    new FlickrClone.Views.PhotoFormModal({
+    new FlickrClone.Views.GalleryFormModal({
       model: gallery,
       collection: this.collection
     });

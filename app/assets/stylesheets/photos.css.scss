@@ -16,6 +16,34 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.img-thumb {
+  position: relative;
+  width:100%;
+  height: auto;
+  overflow:hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#bg-image-photo-show {
+  background: url("loginbg.png"); //no-repeat center center fixed;
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -10;
+}
+#bg-image-photo-show img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
 
 .modal-background {
   background-color: rgba(0, 0, 0, .75);
@@ -38,6 +66,15 @@
   padding: 15px;
 }
 
+#photo-show-wrapper {
+  color: rgba(0, 0, 0, .75);
+  .photo-show-content {
+    border-radius: 20px;
+    padding-left: 75px;
+    padding-bottom: 35px;
+  }
+
+}
 
 // .card-modal-dismiss {
 //   float: right;
@@ -45,27 +82,4 @@
 //   &:hover {
 //     text-decoration: none;
 //   }
-// }
-
-
-////
-// .vertical-alignment-helper {
-//   display:table;
-//   height: 100%;
-//   width: 100%;
-//   // pointer-events:none;
-// }
-// .vertical-align-center {
-//   /* To center vertically */
-//   display: table-cell;
-//   vertical-align: middle;
-//   pointer-events:none;
-// }
-// .modal-content {
-//   /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
-//   width:inherit;
-//   height:inherit;
-//   /* To center horizontally */
-//   margin: 0 auto;
-//   padding: 30px;
 // }

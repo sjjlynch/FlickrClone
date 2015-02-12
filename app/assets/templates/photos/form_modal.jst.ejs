@@ -19,6 +19,9 @@
           <option value="<%=gallery.id%>"><%= gallery.escape("title") %></option>
           <% }); %>
         </select>
+        <div class="form-group">
+          <img class="photo-preview-image img-resposive img-thumb" data-src="<%= photo.get('filepicker_url') %>">
+        </div>
         <input type="submit" value="Post Now" class="btn btn-default">
       </form>
 

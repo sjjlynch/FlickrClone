@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
+//= require bootstrap
 //= require bootstrap.min
 //= require masonry.pkgd.min
 //= require typeahead

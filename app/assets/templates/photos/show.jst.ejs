@@ -1,27 +1,39 @@
-<div class="photo-title" id="photo-title">
-    <h4><%= photo.escape('title') %></h4>
-  </div>
+<div id="photo-show-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 photo-show-content well">
+        <div class="photo-title" id="photo-title">
+            <h4><%= photo.escape('title') %></h4>
+          </div>
 
-  <div class='photo-description' id="{{id}}">
-    <h4><%= photo.escape("description") %></h4>
-  </div>
+          <div class='photo-description' id="{{id}}">
+            <h4><%= photo.escape("description") %></h4>
+          </div>
 
-  <div class = "gallery-photo-display">
-    <img src= <%= photo.escape("filepicker_url")%> >
-  </div>
+          <div class = "gallery-photo-display">
+            <img class="img-responsive" src= <%= photo.escape("filepicker_url")%> >
+          </div>
 
-  <div class='add-tagging-form'>
-    <div id="taggings-form">
+          <div class='add-tagging-form'>
+            <div id="taggings-form">
+            </div>
+          </div>
+
+          <div class='taggings-window well'>
+            <div id="photo-taggings">
+            </div>
+          </div>
+
+          <div class='index-link'>
+            <a href="#photos">
+              <h4>Back to Photo Index</h4>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+</div>
 
-  <div class='taggings-window'>
-    <div id="photo-taggings">
-    </div>
-  </div>
-
-  <div class='index-link'>
-    <a href="#photos">
-      <h4>Back to Photo Index</h4>
-    </a>
+  <div id="bg-image-photo-show">
+    <!-- <img src="loginbg.png" alt=""> -->
   </div>

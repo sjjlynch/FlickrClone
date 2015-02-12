@@ -20,8 +20,8 @@ FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
     this.addSubview("#photo-taggings", view);
     if (this.tagFormView) {
       this.removeSubview("#taggings-form", this.tagFormView);
+      this.addTagForm();
     }
-    this.addTagForm();
   },
 
   render: function(){
