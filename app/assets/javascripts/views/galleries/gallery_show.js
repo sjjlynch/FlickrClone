@@ -8,6 +8,11 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
       that.addPhoto(photo);
     });
     this.listenTo(this.model.photos(), "add", this.addPhoto);
+    this.$('#gallery-index').mouseenter(function(){
+      that.renderGalleryIndex();
+    }).mouseleave(function() {
+      that.removeSubview("#gallery-index", that.galIndexView);
+    });
   },
 
   events: {
@@ -50,7 +55,6 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
     var view = this;
     var content = this.template({gallery: this.model});
     this.$el.html(content);
-    this.renderGalleryIndex();
     this.attachSubviews();
     setTimeout(function(){
       this.$("#mygallery").justifiedGallery({
@@ -66,10 +70,10 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
   },
 
   renderGalleryIndex: function() {
-    var view = new FlickrClone.Views.GalleriesIndex({
+    var galIndexView = new FlickrClone.Views.GalleriesIndex({
       collection: this.collection
     });
-    this.addSubview("#gallery-index", view);
+    this.addSubview("#gallery-index", galIndexView);
   }
 
 });
