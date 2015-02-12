@@ -5,7 +5,7 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
   initialize: function(options){
     var that = this;
     this.model.photos().each(function(photo){
-      that.addPhoto(photo)
+      that.addPhoto(photo);
     });
     this.listenTo(this.model.photos(), "add", this.addPhoto);
   },
@@ -30,17 +30,20 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
   },
 
   addPhoto: function (photo) {
-
-    var view = new FlickrClone.Views.PhotoShow({
-      model: photo,
-      url: photo.escape("filepicker_url")
-      // showAll: false
-    });
-    this.addSubview("#photos", view);
-    this.$(".photo-title").replaceWith("");
-    this.$(".photo-description").replaceWith("")
-    this.$(".add-tagging-form").replaceWith("")
-    this.$(".index-link").replaceWith("")
+    // var view = new FlickrClone.Views.PhotoShow({
+    //   model: photo,
+    //   url: photo.escape("filepicker_url")
+    //   // showAll: false
+    // });
+    var view = new FlickrClone.Views.GalleryItem({
+      model: photo
+    })
+    this.addSubview("#mygallery", view);
+    // this.addSubview("#photos", view);
+    // this.$(".photo-title").replaceWith("");
+    // this.$(".photo-description").replaceWith("")
+    // this.$(".add-tagging-form").replaceWith("")
+    // this.$(".index-link").replaceWith("")
   },
 
   render: function(){
@@ -50,7 +53,14 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
     this.renderGalleryIndex();
     this.attachSubviews();
     setTimeout(function(){
-      this.$("#mygallery").justifiedGallery();
+      this.$("#mygallery").justifiedGallery({
+        "rowHeight": 200,
+        "captions": true,
+        "waitThumbnailsLoad": true,
+        "captionSettings":	{ animationDuration: 500,
+          visibleOpacity: 0.7,
+          nonVisibleOpacity: 0.0 }
+        });
     }.bind(this), 10);
     return this;
   },
