@@ -43,7 +43,12 @@
         <button type="button" class="modal-btn btn btn-default">Add Photo</button>
       </div>
       <!-- <div class="gallery-photo-container js-masonry" data-masonry-options='{ "columnWidth": 200, "itemSelector": ".item" }'> -->
-      <div id="myphotos">
+      <div id="#myphotos">
+        <% photos.each(function (photo) { %>
+          <a href="#photos/<%= photo.id %>">
+            <img src="<%= photo.escape('filepicker_url') %>">
+          </a>
+        <% }); %>
       </div>
 
-    </div>
+  </div>

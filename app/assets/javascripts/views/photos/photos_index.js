@@ -1,8 +1,8 @@
-FlickrClone.Views.PhotosIndex = Backbone.View.extend({
+FlickrClone.Views.PhotosIndex = Backbone.CompositeView.extend({
   template: JST["photos/index"],
 
   events: {
-    'click .delete': 'destroyPhoto',
+    // 'click .delete': 'destroyPhoto',
     'click button.modal-btn': 'photoModal'
   },
 
@@ -22,19 +22,42 @@ FlickrClone.Views.PhotosIndex = Backbone.View.extend({
     this.modalView.delegateEvents();
   },
 
-  destroyPhoto: function(event){
-    var $target = $(event.currentTarget);
-    var photo = this.collection.getOrFetch($target.attr("data-id"));
-    photo.destroy();
-  },
+  // destroyPhoto: function(event){
+  //   var $target = $(event.currentTarget);
+  //   var photo = this.collection.getOrFetch($target.attr("data-id"));
+  //   photo.destroy();
+  // },
 
   initialize: function(){
-    this.listenTo(this.collection, "sync add remove update", this.render);
+    this.listenTo(this.collection, "add", this.addPhotoItem);
+    // this.listenTo(this.collection, "sync add remove update", this.render);
   },
 
+  addPhotoItem: function (photo) {
+    var view = new FlickrClone.Views.PhotoItem({
+      model: photo
+    })
+    this.addSubview("#myphotos", view);
+    this.render();
+  },
+
+
   render: function(){
-    var content = this.template({photos: this.collection});
+    var content = this.template({
+      photos: this.collection
+      });
     this.$el.html(content);
+    this.attachSubviews();
+    setTimeout(function(){
+      this.$("#myphotos").justifiedGallery({
+        "rowHeight": 80,
+        "captions": true,
+        "waitThumbnailsLoad": true,
+        "captionSettings":	{ animationDuration: 500,
+          visibleOpacity: 0.7,
+          nonVisibleOpacity: 0.0 }
+        });
+      }.bind(this), 10);
     return this;
   }
 

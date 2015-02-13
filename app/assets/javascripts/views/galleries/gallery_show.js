@@ -44,6 +44,7 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
       model: photo
     })
     this.addSubview("#mygallery", view);
+    this.render();
     // this.addSubview("#photos", view);
     // this.$(".photo-title").replaceWith("");
     // this.$(".photo-description").replaceWith("")
