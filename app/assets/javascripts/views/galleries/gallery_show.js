@@ -17,7 +17,14 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
   },
 
   events: {
-    'click button.modal-btn': 'photoModal'
+    'click button.modal-btn': 'photoModal',
+    'click .delete': 'destroyGallery'
+  },
+
+  destroyPhoto: function(event){
+    var $target = $(event.currentTarget);
+    this.model.destroy();
+    Backbone.history.navigate("/galleries", {trigger: true});
   },
 
   photoModal: function(){
