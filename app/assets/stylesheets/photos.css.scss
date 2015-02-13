@@ -8,16 +8,17 @@
 
 .photo-index-header{
   margin-left: 40px;
-  float: left;
+  display:inline;
+  // float: left;
 
   .header-photos {
     float:left;
-    display:inline;
+    // display:inline;
   }
 
   .modal-btn {
     float:left;
-    display:inline;
+    // display:inline;
     margin-top: 8px;
     margin-left: 20px;
   }

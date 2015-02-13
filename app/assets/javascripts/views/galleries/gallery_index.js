@@ -8,11 +8,31 @@ FlickrClone.Views.GalleriesIndex = Backbone.CompositeView.extend({
   render: function(){
     var content = this.template({galleries: this.collection});
     this.$el.html(content);
+    this.attachSubviews();
     return this;
   },
 
   events: {
-    'click button': 'galleryModal'
+    'click button': 'galleryModal',
+    'mouseenter a': 'renderPreview',
+    'mouseleave a': 'deletePreview'
+  },
+
+  renderPreview: function(event){
+    var gallId = $(event.target).attr("data-id");
+    var gals = new FlickrClone.Collections.Galleries();
+    gals.fetch();
+    var gallery = gals.getOrFetch(gallId);
+    var galview = new FlickrClone.Views.GalleryPreview({
+      model: gallery,
+      collection: gals
+    });
+    galview.$(".galler-show-header").replaceWith("");
+    this.addSubview("#previewArea", galview);
+  },
+
+  deletePreview: function(event){
+    this.$("#previewArea").empty();
   },
 
   galleryModal: function(){

@@ -2,6 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.gallery-preview-container {
+  margin-top: 67px;
+}
+
+.gallery-sidebar {
+  margin-left: 40px;
+}
+
+.gallery-show-title {
+  margin-left: 40px;
+  // float: left;
+
+  .gal-title {
+    float:left;
+    display:inline;
+  }
+
+  .gal-description {
+    float:left;
+    display:inline;
+    margin-top: 29px;
+    margin-left: 20px;
+  }
+
+  .modal-btn {
+    float:left;
+    display:inline;
+    margin-top: 7px;
+    margin-left: 20px;
+  }
+
+}
+
+
 #gallery-index {
   min-height: 300px;
   min-width: 300px;
@@ -59,31 +93,3 @@
 
     }
 }
-//
-// <div class="header">
-// <h4>Gallery Index</h4>
-// </div>
-//
-// <div id="content">
-// main content here
-// </div>
-//
-// <div id="sidebar">
-// <div class="gallery-modal-button">
-// <button type="button" class="btn btn-default">Add Gallery</button>
-// </div>
-//
-// <% galleries.each(function (gallery) { %>
-//   <div class='gallery-title'>
-//   <a href="#galleries/<%= gallery.id %>">
-//   <h4><%= gallery.escape('title') %></h4>
-//   </a>
-//   </div>
-//   <% }); %>
-//   </div>
-//
-//   <div class="header">
-//   <h4>Gallery Index</h4>
-//   </div>
-//
-//   </div>

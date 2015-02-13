@@ -8,6 +8,7 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
       that.addPhoto(photo);
     });
     this.listenTo(this.model.photos(), "add", this.addPhoto);
+    this.listenTo(this.model, "sync", this.render);
     this.$('#gallery-index').mouseenter(function(){
       that.renderGalleryIndex();
     }).mouseleave(function() {
