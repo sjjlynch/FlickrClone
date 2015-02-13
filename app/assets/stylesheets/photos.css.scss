@@ -57,57 +57,74 @@
 
 
 .photo-show-align{
-  // position: relative;
-  margin: 0;
-  // height: 600px;
-  height: auto;
-  width: auto;
-  display: block;
-
   .img-responsive {
-    position: absolute;
+    // position: absolute;
     left: 0px;
     top: 0px;
     z-index: -1;
     // position: relative;
     float: left;
     display:inline;
-    margin: 0;
+    margin-left: 0px;
+    // margin-right: 40px;
     display: block;
 
-        .photo-title {
-          position: relative;
-          float: left;
-          display:inline;
-          color: gray;
-          text-align: left;
-          visibility: hidden;
-        }
 
-        .photo-description{
-          // position: fixed;
-          float: left;
-          // display:inline;
-          color: gray;
-          text-align: left;
-          visibility: hidden;
-        }
   }
-  clear: both;
 
-  .photo-tag-items{
-    position: relative;
+    // .photo-title {
+    //   position: relative;
+    //   float: left;
+    //   display:inline;
+    //   color: gray;
+    //   text-align: left;
+    //   visibility: hidden;
+    // }
+    //
+    // .photo-description{
+    //   // position: fixed;
+    //   float: left;
+    //   // display:inline;
+    //   color: gray;
+    //   text-align: left;
+    //   visibility: hidden;
+    // }
+  // }
 
-      .buttons-window {
-        // position:
-        clear: both;
-        margin-left: 30px;
-        float: left;
-        margin-right: 2px;
-      }
-    }
+
 }
+.photo-attributes{
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  // margin-left: 15px;
+  // left: 15px;
+  div {
+    position: relative;
+    float: left;
+    display:block;
+    color: gray;
+    text-align: left;
+    visibility: hidden;
+  }
+}
+#taggings-form{
+  left: 25px;
+}
+.photo-tag-items{
+  position: relative;
+  #taggings-form{
+    margin-left: 30px;
 
+  }
+  .buttons-window {
+    // position:
+    margin-top: -15px;
+    margin-left: 30px;
+    // float: left;
+    margin-right: 2px;
+  }
+}
 // container for other gallery items
 
 // Place all the styles related to the Photos controller here.
@@ -170,6 +187,8 @@
     border-radius: 0px;
     // padding-left: 75px;
     padding-bottom: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-bottom: 20px;
     background: rgba(0, 0, 0, .1);
   }

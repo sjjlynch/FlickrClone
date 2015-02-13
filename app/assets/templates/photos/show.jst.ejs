@@ -4,39 +4,39 @@
       <div class="col-md-6 col-md-offset-3 photo-show-content">
 
 
-          <div class='photo-show-align'>
-
-              <a href="<%= photo.escape("filepicker_url")%>" class='photos-window gallery-photo-display'>
-                <img class="img-responsive" src= <%= photo.escape("filepicker_url")%> >
-              </a>
-              <div class="photo-title" id="photo-title">
-                <h2><%= photo.escape('title') %></h2>
-              </div>
-              <div class='photo-description' id="">
-                <h4><%= photo.escape("description") %></h4>
-              </div>
-
-
-            <div class='photo-tag-items'>
-              <!-- <div class='add-tagging-form'> -->
-                <div id="taggings-form">
-                </div>
-              <!-- </div> -->
-                <div class='taggings-window' id="photo-taggings">
-                </div>
-
-                <div class='buttons-window'>
-                  <button class="delete btn btn-default" data-id="<%= photo.id %>">Delete Photo</button>
-                  <button class="index btn btn-default">Photo Index</button>
-                </div>
-            </div>
+        <div class='photo-show-align clearfix'>
+          <a href="<%= photo.escape("filepicker_url")%>" class='photos-window gallery-photo-display'>
+            <img class="img-responsive" src= <%= photo.escape("filepicker_url")%> >
+          </a>
+        </div>
+        <div class="photo-attributes">
+          <div class="photo-title" id="photo-title">
+            <h2><%= photo.escape('title') %></h2>
+          </div>
+          <br>
+          <div class='photo-description' id="">
+            <h4><%= photo.escape("description") %></h4>
+          </div>
+        </div>
+        <div class='photo-tag-items clearfix'>
+          <!-- <div class='add-tagging-form'> -->
+          <div id="taggings-form">
+          </div>
+          <!-- </div> -->
+          <div class='taggings-window clearfix' id="photo-taggings">
+          </div>
+          <br>
+          <div class='buttons-window'>
+            <button class="delete btn btn-default" data-id="<%= photo.id %>">Delete Photo</button>
+            <button class="index btn btn-default">Photo Index</button>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 
-  <div id="bg-image-photo-show">
-    <!-- <img src="loginbg.png" alt=""> -->
-  </div>
+<div id="bg-image-photo-show">
+  <!-- <img src="loginbg.png" alt=""> -->
+</div>

@@ -28,12 +28,13 @@
   width: 140px;
   margin-left: 50px;
 #flockr-logo-image {
-   background: url("flockr-logo.png") no-repeat; //center center fixed;
-   position: fixed;
+//    background: url("flockr-logo.png") no-repeat; //center center fixed;
+//    position: fixed;
    top: 10.5px;
    left: 30px;
-
-   /* Preserve aspet ratio */
+   margin: -10px;
+//
+//    /* Preserve aspet ratio */
    min-width: 15%;
    min-height: 15%;
  }
