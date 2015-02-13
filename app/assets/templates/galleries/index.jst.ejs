@@ -30,20 +30,23 @@
 
 </div> -->
 
+
+
   <div class="container-fluid">
 
     <div class="row row-offcanvas row-offcanvas-left">
 
       <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
-        <ul class="nav nav-sidebar">
+        <div class="nav nav-sidebar">
         <h1 class="page-header">
           Galleries
           <p class="lead"></p>
         </h1>
+        <div class="list-group">
           <% galleries.each(function (gallery) { %>
-            <li class="active"><a href="#galleries/<%= gallery.id %>"><%= gallery.escape('title') %></a></li>
+            <a class="list-group-item" href="#galleries/<%= gallery.id %>"><%= gallery.escape('title') %></a>
           <% }); %>
-        </ul>
+        </div>
 
       </div><!--/span-->
 

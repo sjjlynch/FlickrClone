@@ -3,26 +3,32 @@
 <div class="vertical-alignment-helper">
 <div class="modal-dialog vertical-align-center">
 <div class="modal-content">
+<div class="modal-title-text">
 <h2>Add Photo</h2>
+</div>
 <form class="newphoto">
 
   <input type="filepicker" class="btn btn-default filepickbutton" name="photo[filepicker_url]"
   data-fp-mimetype="image/*">
+  <div class="form-title-modal">
   <label>Title
-    <input type="text" name="photo[title]" value="title"></label>
+    <input type="text" name="photo[title]" placeholder="Title"></label>
+  </div>
     <label>Description
-      <input type="textarea" name="photo[description]" value="desc"></label>
-      <select name="photo[gallery_id]" id>
+      <input type="textarea" name="photo[description]" placeholder="Description"></label>
+      <select class="form-control" name="photo[gallery_id]">
         <option selected>Select Gallery</option>
-        <option value="New">Create New Gallery</option>
+        <option class="value="New">Create New Gallery</option>
         <% galleries.each(function (gallery) { %>
           <option value="<%=gallery.id%>"><%= gallery.escape("title") %></option>
-          <% }); %>
-        </select>
+      <% }); %>
+      </select>
         <div class="form-group">
           <img class="photo-preview-image img-resposive img-thumb" data-src="<%= photo.get('filepicker_url') %>">
         </div>
-        <input type="submit" value="Post Now" class="btn btn-default">
+        <div class="submit-modal">
+          <input type="submit" value="Post Now" class="btn btn-default">
+        </div>
       </form>
 
       <div class="preview"></div>

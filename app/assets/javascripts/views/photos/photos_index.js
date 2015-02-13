@@ -1,6 +1,14 @@
 FlickrClone.Views.PhotosIndex = Backbone.CompositeView.extend({
   template: JST["photos/index"],
 
+  initialize: function(options){
+    this.render();
+    // this.listenTo(this.collection, "add", this.addPhotoItem);
+    this.listenTo(this.collection, "sync", this.render);
+    this.galleries = options.galleries;
+    // this.listenTo(this.collection, "sync add remove update", this.render);
+  },
+
   events: {
     // 'click .delete': 'destroyPhoto',
     'click button.modal-btn': 'photoModal'
@@ -16,7 +24,7 @@ FlickrClone.Views.PhotosIndex = Backbone.CompositeView.extend({
     new FlickrClone.Views.PhotoFormModal({
       model: photo,
       collection: photos,
-      galleries: galleries
+      galleries: this.galleries
     });
     $('body').prepend(this.modalView.render().$el);
     this.modalView.delegateEvents();
@@ -28,11 +36,6 @@ FlickrClone.Views.PhotosIndex = Backbone.CompositeView.extend({
   //   photo.destroy();
   // },
 
-  initialize: function(){
-    // this.listenTo(this.collection, "add", this.addPhotoItem);
-    this.listenTo(this.collection, "sync", this.render);
-    // this.listenTo(this.collection, "sync add remove update", this.render);
-  },
 
   // addPhotoItem: function (photo) {
   //   var view = new FlickrClone.Views.PhotoItem({

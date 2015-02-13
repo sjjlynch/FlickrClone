@@ -8,8 +8,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-
-      <%= link_to "Flickr", root_url + "#", method: :get, class: "navbar-brand" %>
+          <a class="navbar-brand" id="flockr-logo-image" href="#">
+              <img src="app/assets/images/flockr-logo.png">
+          </a>
+      <!-- <%= link_to "Flickr", root_url + "#", method: :get, class: "navbar-brand" %> -->
     </div>
 
 
@@ -24,7 +26,7 @@
       </ul>
       <% if current_user %>
         <div class="search-wrapper"></div>
-        <!-- <div class=".galleries-dropdown-menu"></div> -->
+        <div class=".galleries-dropdown-menu"></div>
       <% end %>
       <ul class="nav navbar-nav navbar-right">
 

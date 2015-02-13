@@ -1,9 +1,40 @@
+// .taggings-window {
+//   // background-color: rgba(0, 0, 0, .75);
+//   color: rgba(0, 0, 0, .75);
+//   #photo-taggings {
+//     background-color: rgba(0, 0, 0, .75);
+//   }
+// }
+
+.form-title-modal {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.modal-title-text {
+  text-align: center;
+}
+
+.submit-modal {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
 .taggings-window {
-  // background-color: rgba(0, 0, 0, .75);
-  color: rgba(0, 0, 0, .75);
-  #photo-taggings {
-    background-color: rgba(0, 0, 0, .75);
+  margin-left: 15px;
+  margin-bottom: 10px;
+  .photo-tag {
+    margin-bottom: 2px;
+    margin-right: 2px;
+    float: left;
   }
+}
+
+.buttons-window {
+  clear: both;
+  margin-left: 30px;
+  float: left;
+  margin-right: 2px;
 }
 
 .photo-title {
@@ -12,7 +43,33 @@
 
 }
 
+.tag-text{
+  padding-left: 30px;
+}
 
+.newtag {
+  left-margin: 50px;
+  padding: 30px;
+}
+
+.photo-title {
+  text-align: center;
+}
+
+
+.photo-description{
+  text-align: center;
+}
+
+.photo-show-align{
+  margin: 0 auto;
+  width: 300px;
+  display: block;
+  .img-responsive {
+    margin: 0 auto;
+    display: block;
+  }
+}
 // container for other gallery items
 
 // Place all the styles related to the Photos controller here.
@@ -73,9 +130,9 @@
   color: rgba(0, 0, 0, .75);
   .photo-show-content {
     border-radius: 20px;
-    padding-left: 75px;
+    // padding-left: 75px;
     padding-bottom: 35px;
-    background-color: rgba(0, 0, 0, .75);
+    background: rgba(0, 0, 0, .1);
   }
 
 }

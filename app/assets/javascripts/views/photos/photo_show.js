@@ -11,6 +11,21 @@ FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
     // var showAll = options.showAll;
   },
 
+  events: {
+    'click .delete': 'destroyPhoto',
+    'click .index': 'goToIndex'
+  },
+
+  goToIndex: function(){
+    Backbone.history.navigate("/photos", {trigger: true});
+  },
+
+  destroyPhoto: function(event){
+    var $target = $(event.currentTarget);
+    this.model.destroy();
+    Backbone.history.navigate("/photos", {trigger: true});
+  },
+
   addTag: function(tag) {
     var tags = new FlickrClone.Collections.Tags();
     tags.fetch();
@@ -43,5 +58,17 @@ FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
     });
     this.addSubview("#taggings-form", this.tagFormView);
   }
+
+
+  // this.model.save({}, {
+  //   success: function(){
+  //     that.collection.add(that.model, {merge: true});
+  //     Backbone.history.navigate("/galleries/" + that.model.id, {trigger: true});
+  //   }
+  // });
+  //
+
+
+
 
 });

@@ -21,14 +21,20 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
   },
 
   photoindex: function(){
+    var photo = new FlickrClone.Models.Photo();
     var photos = this.photos;
     photos.fetch();
-    var view = new FlickrClone.Views.PhotosIndex({collection: photos});
+    var galleries = this.galleries;
+    galleries.fetch();
+    var view = new FlickrClone.Views.PhotosIndex({
+      model: photo,
+      collection: photos,
+      galleries: galleries
+    });
     this._swapView(view);
   },
 
   searchphotos: function (params) {
-    console.log("whoopeee");
     var photos = this.photos;
     photos.fetch();
     var view = new FlickrClone.Views.SearchShow({ params: params });

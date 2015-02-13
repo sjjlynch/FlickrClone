@@ -201,11 +201,11 @@ $input-border-focus:             transparent;
 $input-color-placeholder:        $gray-light;
 
 //** Default `.form-control` height
-$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2);
+$input-height-base:              ($line-height-computed + ($padding-base-vertical * 1) + 1);
 //** Large `.form-control` height
-$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2);
+$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 1) + 1);
 //** Small `.form-control` height
-$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
+$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 1) + 1);
 
 $legend-color:                   $headings-color;
 $legend-border-color:            transparent;
@@ -750,8 +750,8 @@ $thumbnail-caption-padding:   9px;
 //
 //##
 
-$well-bg:                     rgba(0, 0, 0, .75);
-$well-opacity:                0.2;
+$well-bg:                     rgba(0, 0, 0, 0);
+$well-opacity:                0.1;
 $well-border:                 transparent;
 
 
