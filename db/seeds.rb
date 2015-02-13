@@ -9,8 +9,8 @@
 irb(main):004:0>
 
 
-User.create([{id: 1}, {username: "TestUser"}, {password: "password"}, {email: "email_address"}])
+User.create([{id: 30}, {username: "TestUser"}, {password: "password"}, {email: "email_address"}])
 
-Gallery.create([{id: 1}, {title: "Flamingos"}, {description: "Pink birds that eat shrimp. Majestic."}, {photographer_id: 15}, {user_id: 1}])
+Gallery.create([{id: 30}, {title: "Flamingos"}, {description: "Pink birds that eat shrimp. Majestic."}, {photographer_id: 15}, {user_id: 1}])
 
-Photo.create([{id: 1}, {title: "One flamingo"}, {description: "Pink birds that eat shrimp. Majestic."}, {photographer_id: 15}, {gallery_id: 1}, {user_id: 1}, {filepicker_url: "http://www.webexhibits.org/causesofcolor/images/content/istock000003867979mediumZ.jpg"}])
+Photo.create([{id: 30}, {title: "Some flamingoes"}, {description: "Herd of young flamingi"}, {photographer_id: 15}, {gallery_id: 1}, {user_id: 1}, {filepicker_url: "http://www.webexhibits.org/causesofcolor/images/content/istock000003867979mediumZ.jpg"}])
