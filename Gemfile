@@ -36,6 +36,8 @@ gem 'bootstrap-sass'
 
 gem 'jquery-ui-rails'
 
+gem 'rails_12factor'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

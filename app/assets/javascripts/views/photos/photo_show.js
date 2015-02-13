@@ -13,7 +13,24 @@ FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
 
   events: {
     'click .delete': 'destroyPhoto',
-    'click .index': 'goToIndex'
+    'click .index': 'goToIndex',
+    'mouseenter .photo-show-content': 'showDetails',
+    'mouseleave .photo-show-content': 'hideDetails'
+  },
+
+  showDetails: function(event) {
+    // $target = this.$(".photo-title").toggle();
+    $title = this.$(".photo-title");
+    $description = this.$(".photo-description");
+    $title.css({'visibility' : 'visible'});
+    $description.css({'visibility' : 'visible'});
+  },
+
+  hideDetails: function(event) {
+    $title = this.$(".photo-title");
+    $description = this.$(".photo-description");
+    $title.css({'visibility' : 'hidden'});
+    $description.css({'visibility' : 'hidden'});
   },
 
   goToIndex: function(){
@@ -44,6 +61,10 @@ FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
     var content = this.template({photo: this.model});
     this.$el.html(content);
     this.attachSubviews();
+    $title = this.$(".photo-title");
+    $description = this.$(".photo-description");
+    $title.css({'visibility' : 'hidden'});
+    $description.css({'visibility' : 'hidden'});
     return this;
   },
 

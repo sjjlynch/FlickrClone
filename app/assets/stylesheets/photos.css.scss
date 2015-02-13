@@ -53,46 +53,61 @@
   }
 }
 
-.buttons-window {
-  clear: both;
-  margin-left: 30px;
-  float: left;
-  margin-right: 2px;
-}
-
-.photo-title {
-  color: gray;
-  font-size: 50px;
-
-}
-
-.tag-text{
-  padding-left: 30px;
-}
-
-.newtag {
-  left-margin: 50px;
-  padding: 30px;
-}
-
-.photo-title {
-  text-align: center;
-}
 
 
-.photo-description{
-  text-align: center;
-}
 
 .photo-show-align{
-  margin: 0 auto;
-  width: 300px;
+  // position: relative;
+  margin: 0;
+  // height: 600px;
+  height: auto;
+  width: auto;
   display: block;
+
   .img-responsive {
-    margin: 0 auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    // position: relative;
+    float: left;
+    display:inline;
+    margin: 0;
     display: block;
+
+        .photo-title {
+          position: relative;
+          float: left;
+          display:inline;
+          color: gray;
+          text-align: left;
+          visibility: hidden;
+        }
+
+        .photo-description{
+          // position: fixed;
+          float: left;
+          // display:inline;
+          color: gray;
+          text-align: left;
+          visibility: hidden;
+        }
   }
+  clear: both;
+
+  .photo-tag-items{
+    position: relative;
+
+      .buttons-window {
+        // position:
+        clear: both;
+        margin-left: 30px;
+        float: left;
+        margin-right: 2px;
+      }
+    }
 }
+
 // container for other gallery items
 
 // Place all the styles related to the Photos controller here.
@@ -152,18 +167,10 @@
 #photo-show-wrapper {
   color: rgba(0, 0, 0, .75);
   .photo-show-content {
-    border-radius: 20px;
+    border-radius: 0px;
     // padding-left: 75px;
     padding-bottom: 35px;
+    margin-bottom: 20px;
     background: rgba(0, 0, 0, .1);
   }
-
 }
-
-// .card-modal-dismiss {
-//   float: right;
-//   font-size: 130%;
-//   &:hover {
-//     text-decoration: none;
-//   }
-// }
