@@ -51,12 +51,14 @@
 .modal-background {
   background-color: rgba(0, 0, 0, .75);
   position: fixed;
-  top: 0;
+  top: 0px;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1031;
 }
+.modal-dialog {
+  top: -100px;
 .modal-content {
   width: 50%;
   opacity: 100%;
@@ -68,7 +70,7 @@
   background-color: rgb(240, 240, 240);
   padding: 15px;
 }
-
+}
 
 #gallery-index-view {
   position: fixed;

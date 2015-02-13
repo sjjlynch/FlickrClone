@@ -161,6 +161,9 @@
 }
 
 .modal-background {
+  .vertical-align-center {
+    top: -200px;
+  }
   background-color: rgba(0, 0, 0, .75);
   position: fixed;
   top: 0;
@@ -169,6 +172,7 @@
   right: 0;
   z-index: 1031;
 }
+
 .modal-content {
   width: 50%;
   opacity: 100%;

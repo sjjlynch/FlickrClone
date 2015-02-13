@@ -8,6 +8,7 @@
           Galleries
           <!-- <p class="lead"></p> -->
         </h1>
+        <button type="button" class="modal-btn btn btn-default">Add Gallery</button>
         <div class="list-group">
           <% galleries.each(function (gallery) { %>
             <a class="list-group-item" data-id="<%= gallery.id %>" href="#galleries/<%= gallery.id %>"><%= gallery.escape('title') %></a>
