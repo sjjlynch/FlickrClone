@@ -38,6 +38,8 @@ gem 'jquery-ui-rails'
 
 gem 'rails_12factor'
 
+gem 'seed_dump'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
