@@ -14,7 +14,7 @@
             <div id="myphotos">
               <% photos.each(function (photo) { %>
                 <a href="#photos/<%= photo.id %>">
-                  <img src="<%= photo.escape('filepicker_url') %>">
+                  <img src="<%= photo.escape('filepicker_url') %>" height="70px" width="105px">
                 </a>
               <% }); %>
             </div>
