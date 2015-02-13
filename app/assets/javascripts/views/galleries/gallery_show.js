@@ -35,21 +35,11 @@ FlickrClone.Views.GalleryShow = Backbone.CompositeView.extend({
   },
 
   addPhoto: function (photo) {
-    // var view = new FlickrClone.Views.PhotoShow({
-    //   model: photo,
-    //   url: photo.escape("filepicker_url")
-    //   // showAll: false
-    // });
     var view = new FlickrClone.Views.GalleryItem({
       model: photo
     })
     this.addSubview("#mygallery", view);
     this.render();
-    // this.addSubview("#photos", view);
-    // this.$(".photo-title").replaceWith("");
-    // this.$(".photo-description").replaceWith("")
-    // this.$(".add-tagging-form").replaceWith("")
-    // this.$(".index-link").replaceWith("")
   },
 
   render: function(){
