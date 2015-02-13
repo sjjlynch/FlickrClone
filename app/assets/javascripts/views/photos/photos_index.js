@@ -3,10 +3,8 @@ FlickrClone.Views.PhotosIndex = Backbone.CompositeView.extend({
 
   initialize: function(options){
     this.render();
-    // this.listenTo(this.collection, "add", this.addPhotoItem);
     this.listenTo(this.collection, "sync", this.render);
     this.galleries = options.galleries;
-    // this.listenTo(this.collection, "sync add remove update", this.render);
   },
 
   events: {
@@ -30,30 +28,14 @@ FlickrClone.Views.PhotosIndex = Backbone.CompositeView.extend({
     this.modalView.delegateEvents();
   },
 
-  // destroyPhoto: function(event){
-  //   var $target = $(event.currentTarget);
-  //   var photo = this.collection.getOrFetch($target.attr("data-id"));
-  //   photo.destroy();
-  // },
-
-
-  // addPhotoItem: function (photo) {
-  //   var view = new FlickrClone.Views.PhotoItem({
-  //     model: photo
-  //   })
-  //   this.addSubview("#myphotos", view);
-  //   this.render();
-  // },
-
   render: function(){
     var content = this.template({
       photos: this.collection
       });
     this.$el.html(content);
-    // this.attachSubviews();
     setTimeout(function(){
       this.$("#myphotos").justifiedGallery({
-        "rowHeight": 80,
+        "rowHeight": 120,
         "captions": true,
         "waitThumbnailsLoad": true,
         "captionSettings":	{ animationDuration: 500,

@@ -24,10 +24,20 @@
    width:20%
  }
 
-.flockr-logo-image {
-   background-image: url("flockr-logo.png");
-   background-repeat: repeat;
+.navbar-brand {
+  width: 140px;
+  margin-left: 50px;
+#flockr-logo-image {
+   background: url("flockr-logo.png") no-repeat; //center center fixed;
+   position: fixed;
+   top: 10.5px;
+   left: 30px;
+
+   /* Preserve aspet ratio */
+   min-width: 15%;
+   min-height: 15%;
  }
+}
 
 #bolded-gallery-title{
   font-weight: bold;
