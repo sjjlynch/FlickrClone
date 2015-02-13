@@ -34,3 +34,56 @@
   background-color: rgb(240, 240, 240);
   padding: 15px;
 }
+
+
+#gallery-index-view {
+  position: fixed;
+  top: 70px;
+  left: 0;
+
+    .container {
+      position: relative;
+      color: rgba(0, 0, 0, .75);
+
+          .sidebar{
+            position: relative;
+            float:left;
+            width: 30%;
+          }
+
+          .content{
+            position: relative;
+            float:left;
+            width: 70%;
+          }
+
+    }
+}
+//
+// <div class="header">
+// <h4>Gallery Index</h4>
+// </div>
+//
+// <div id="content">
+// main content here
+// </div>
+//
+// <div id="sidebar">
+// <div class="gallery-modal-button">
+// <button type="button" class="btn btn-default">Add Gallery</button>
+// </div>
+//
+// <% galleries.each(function (gallery) { %>
+//   <div class='gallery-title'>
+//   <a href="#galleries/<%= gallery.id %>">
+//   <h4><%= gallery.escape('title') %></h4>
+//   </a>
+//   </div>
+//   <% }); %>
+//   </div>
+//
+//   <div class="header">
+//   <h4>Gallery Index</h4>
+//   </div>
+//
+//   </div>

@@ -750,7 +750,8 @@ $thumbnail-caption-padding:   9px;
 //
 //##
 
-$well-bg:                     $gray-lighter;
+$well-bg:                     rgba(0, 0, 0, .75);
+$well-opacity:                0.2;
 $well-border:                 transparent;
 
 

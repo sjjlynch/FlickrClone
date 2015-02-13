@@ -1,19 +1,49 @@
-<h3>All Photos</h3>
+<!-- <div class="container-fluid">
 
-<div class="photo-modal-button">
-  <button type="button" class="modal-btn btn btn-default">Add Photo</button>
-</div>
-
-
-<% photos.each(function (photo) { %>
-    <div class='photo-title'>
-      <a href="#photos/<%= photo.id %>">
-        <h4><%= photo.escape('title') %></h4>
-      </a>
+  <div class="row row-offcanvas row-offcanvas-left">
+  <div class="col-sm-3 col-md-2">
+      <h1 class="page-header">
+        All Photos
+        <p class="lead"></p>
+      </h1>
     </div>
-    <a href="#photos/<%= photo.id %>">
-    <img src= <%= photo.escape("filepicker_url") %>>
-  </a>
-    <button class="delete btn btn-default" data-id="<%= photo.id %>">Delete Photo</button>
+  </div>
 
-<% }); %>
+      <div class="photo-modal-button">
+        <button type="button" class="modal-btn btn btn-default">Add Photo</button>
+      </div>
+
+
+      <% photos.each(function (photo) { %>
+          <div class='photo-title'>
+            <a href="#photos/<%= photo.id %>">
+              <h4><%= photo.escape('title') %></h4>
+            </a>
+          </div>
+          <a href="#photos/<%= photo.id %>">
+          <img src= <%= photo.escape("filepicker_url") %>>
+        </a>
+          <button class="delete btn btn-default" data-id="<%= photo.id %>">Delete Photo</button>
+
+      <% }); %>
+    </div> -->
+
+
+    <div class="container-fluid">
+
+      <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-sm-3 col-md-2">
+          <h1 class="page-header">
+            All Photos
+          </h1>
+        </div>
+      </div>
+
+      <div class="photo-modal-button">
+        <button type="button" class="modal-btn btn btn-default">Add Photo</button>
+      </div>
+      <!-- <div class="gallery-photo-container js-masonry" data-masonry-options='{ "columnWidth": 200, "itemSelector": ".item" }'> -->
+      <div id="myphotos">
+      </div>
+
+    </div>
