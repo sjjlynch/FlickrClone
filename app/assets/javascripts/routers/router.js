@@ -2,10 +2,12 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
   initialize: function(options){
     this.$rootEl = options.$rootEl;
     this.$searchEl = options.$searchEl;
+    this.$tagsearchEl = options.$tagsearchEl;
     this.$galdropEl = options.$galdropEl;
     this.photos = new FlickrClone.Collections.Photos();
     this.galleries = new FlickrClone.Collections.Galleries();
     this.searchSetup();
+    // this.TagSearchSetup();
     this.galleriesDropdown();
   },
 
@@ -106,6 +108,18 @@ FlickrClone.Routers.Router = Backbone.Router.extend({
       }
     });
   },
+
+  // TagSearchSetup: function () {
+  //   var that = this;
+  //   $.ajax({
+  //     url: "/api/tags",
+  //     type: "get",
+  //     success: function(data){
+  //       var view = new FlickrClone.Views.TagSearchSetup({collection: data});
+  //       that.$tagsearchEl.html(view.render().$el)
+  //     }
+  //   });
+  // },
 
   galleriesDropdown: function () {
     var galleries = new FlickrClone.Collections.Galleries();

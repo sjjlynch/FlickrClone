@@ -14,8 +14,16 @@ FlickrClone.Views.PhotoShow = Backbone.CompositeView.extend({
   events: {
     'click .delete': 'destroyPhoto',
     'click .index': 'goToIndex',
-    'mouseenter .photo-show-content': 'showDetails',
-    'mouseleave .photo-show-content': 'hideDetails'
+    'mouseenter .photo-show-content': 'caption',
+    // 'mouseenter .photo-show-content': 'showDetails',
+    // 'mouseleave .photo-show-content': 'nocaption'
+    // 'mouseleave .photo-show-content': 'hideDetails'
+  },
+
+  caption: function(event) {
+    this.$(".photo-show-content").hcaptions({
+      effect: "fade"
+    });
   },
 
   showDetails: function(event) {

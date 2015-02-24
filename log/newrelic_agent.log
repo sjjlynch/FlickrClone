@@ -2375,3 +2375,143 @@ LINE 1: SELECT "photos".* FROM "photos" WHERE (title =)
 [02/13/15 13:57:10 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (15673)] INFO : Doing deferred dependency-detection before Rack startup
 [02/13/15 13:57:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (15673)] ERROR : Invalid license key, please contact support@newrelic.com
 [02/13/15 13:57:48 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (15673)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[02/15/15 20:43:01 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (15673)] INFO : Starting Agent shutdown
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Starting the New Relic agent in "development" environment.
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Environment: development
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Dispatcher: webrick
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Application: development
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Installing ActiveJob instrumentation
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Installing ActiveRecord 4 instrumentation
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Installing Net instrumentation
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Installing deferred Rack instrumentation
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Installing Rack::Builder middleware instrumentation
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Installing Rails 3+ middleware instrumentation
+[02/18/15 10:53:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Installing Rails 4 Controller instrumentation
+[02/18/15 10:53:26 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Installing Rails 4 view instrumentation
+[02/18/15 10:53:26 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Installing Rails 4 Error instrumentation
+[02/18/15 10:53:26 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Finished instrumentation
+[02/18/15 10:53:26 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Doing deferred dependency-detection before Rack startup
+[02/18/15 10:53:37 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/18/15 10:53:37 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[02/18/15 11:10:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Starting the New Relic agent in "development" environment.
+[02/18/15 11:10:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/18/15 11:10:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/18/15 11:10:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/18/15 11:10:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Environment: development
+[02/18/15 11:10:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Dispatcher: webrick
+[02/18/15 11:10:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Application: development
+[02/18/15 11:10:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/18/15 11:10:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Installing ActiveJob instrumentation
+[02/18/15 11:10:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Installing ActiveRecord 4 instrumentation
+[02/18/15 11:10:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Installing Net instrumentation
+[02/18/15 11:10:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Installing deferred Rack instrumentation
+[02/18/15 11:10:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Installing Rack::Builder middleware instrumentation
+[02/18/15 11:10:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Installing Rails 3+ middleware instrumentation
+[02/18/15 11:10:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Installing Rails 4 Controller instrumentation
+[02/18/15 11:10:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Installing Rails 4 view instrumentation
+[02/18/15 11:10:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Installing Rails 4 Error instrumentation
+[02/18/15 11:10:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Finished instrumentation
+[02/18/15 11:10:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1871)] INFO : Doing deferred dependency-detection before Rack startup
+[02/18/15 11:10:38 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1613)] INFO : Starting Agent shutdown
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Starting the New Relic agent in "development" environment.
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Environment: development
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Dispatcher: webrick
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Application: development
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Installing ActiveJob instrumentation
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Installing ActiveRecord 4 instrumentation
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Installing Net instrumentation
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Installing deferred Rack instrumentation
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Installing Rack::Builder middleware instrumentation
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Installing Rails 3+ middleware instrumentation
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Installing Rails 4 Controller instrumentation
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Installing Rails 4 view instrumentation
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Installing Rails 4 Error instrumentation
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Finished instrumentation
+[02/18/15 11:10:54 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Doing deferred dependency-detection before Rack startup
+[02/18/15 11:11:13 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/18/15 11:11:13 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[02/18/15 11:12:45 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (1903)] INFO : Starting Agent shutdown
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Starting the New Relic agent in "development" environment.
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Environment: development
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Dispatcher: webrick
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Application: development
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Installing ActiveJob instrumentation
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Installing ActiveRecord 4 instrumentation
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Installing Net instrumentation
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Installing deferred Rack instrumentation
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Installing Rack::Builder middleware instrumentation
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Installing Rails 3+ middleware instrumentation
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Installing Rails 4 Controller instrumentation
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Installing Rails 4 view instrumentation
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Installing Rails 4 Error instrumentation
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Finished instrumentation
+[02/18/15 11:13:00 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Doing deferred dependency-detection before Rack startup
+[02/18/15 11:13:06 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/18/15 11:13:06 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[02/18/15 17:38:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Photo with 'id'=tags
+[02/18/15 17:38:58 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Photo with 'id'=tags
+[02/18/15 17:39:34 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Photo with 'id'=tags
+[02/18/15 17:40:32 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Photo with 'id'=tag_titles
+[02/18/15 17:42:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Photo with 'id'=tag_titles
+[02/18/15 17:46:03 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Photo with 'id'=tags
+[02/18/15 17:46:09 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Photo with 'id'=tag_titles
+[02/18/15 17:46:14 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=tag_titles
+[02/18/15 17:46:22 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Photo with 'id'=tag_titles
+[02/18/15 17:46:25 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Photo with 'id'=tags
+[02/18/15 17:46:33 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Photo with 'id'=ids
+[02/18/15 17:46:37 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Photo with 'id'=tags
+[02/18/15 17:55:18 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: The action 'update' could not be found for Api::TagsController
+[02/18/15 17:56:26 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tag with 'id'=labels
+[02/19/15 12:07:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "...ply.com editor ": expected selector, was "-->"
+[02/19/15 12:08:08 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (2029)] INFO : Starting Agent shutdown
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Starting the New Relic agent in "development" environment.
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Environment: development
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : No known dispatcher detected.
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Application: development
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Installing ActiveJob instrumentation
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Installing ActiveRecord 4 instrumentation
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Installing Net instrumentation
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Installing deferred Rack instrumentation
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Installing Rack::Builder middleware instrumentation
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Installing Rails 3+ middleware instrumentation
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Installing Rails 4 Controller instrumentation
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Installing Rails 4 view instrumentation
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Installing Rails 4 Error instrumentation
+[02/19/15 12:08:24 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5252)] INFO : Finished instrumentation
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Starting the New Relic agent in "development" environment.
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] WARN : No configuration file found. Working directory = /Users/stefanielynch/aa-work/final_project/FlickrClone
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] WARN : Looked in these locations (based on defaults): /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/config/newrelic.yml, /Users/stefanielynch/aa-work/final_project/FlickrClone/newrelic.yml, /Users/stefanielynch/.newrelic/newrelic.yml, /Users/stefanielynch/newrelic.yml
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Environment: development
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Dispatcher: webrick
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Application: development
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Installing ActiveJob instrumentation
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Installing ActiveRecord 4 instrumentation
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Installing Net instrumentation
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Installing deferred Rack instrumentation
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Installing Rack::Builder middleware instrumentation
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Installing Rails 3+ middleware instrumentation
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Installing Rails 4 Controller instrumentation
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Installing Rails 4 view instrumentation
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Installing Rails 4 Error instrumentation
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Finished instrumentation
+[02/19/15 12:08:36 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] INFO : Doing deferred dependency-detection before Rack startup
+[02/19/15 12:09:45 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/19/15 12:09:45 -0800 Stefanie-Lynchs-MacBook-Pro-2.local (5255)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.

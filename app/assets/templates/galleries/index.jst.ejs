@@ -1,51 +1,25 @@
-  <div class="container-fluid">
+<div class="container-fluid">
 
-    <div class="row row-offcanvas row-offcanvas-left">
+  <div class="row row-offcanvas row-offcanvas-left">
 
-      <div class="col-sm-3 col-md-2 sidebar-offcanvas gallery-sidebar" id="sidebar" role="navigation">
-        <div class="nav nav-sidebar">
-        <h1>
-          Galleries
-          <!-- <p class="lead"></p> -->
-        </h1>
-        <button type="button" class="modal-btn btn btn-default">Add Gallery</button>
-        <div class="list-group">
-          <% galleries.each(function (gallery) { %>
-            <a class="list-group-item" data-id="<%= gallery.id %>" href="#galleries/<%= gallery.id %>"><%= gallery.escape('title') %></a>
+    <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
+
+      <div class="list-group">
+        <% galleries.each(function (gallery) { %>
+          <a class="list-group-item" data-id="<%= gallery.id %>" href="#galleries/<%= gallery.id %>"><%= gallery.escape('title') %></a>
           <% }); %>
         </div>
-
-      </div>
     </div>
 
-    <div class="row row-offcanvas row-offcanvas-left">
+    <div class="col-sm-9 col-md-10 main">
 
-      <div class="col-sm-3 col-md-2 content-preview">
-        <div id="previewArea">
-        </div>
+      <h1 class="page-header">
+        All Galleries
+        <p class="lead">Hover to preview photos</p>
+        <button type="button" class="modal-btn btn btn-default">Add Gallery</button>
+        <div id="previewArea"></div>
 
-      </div>
+
     </div>
-
-        <!--toggle sidebar button-->
-        <p class="visible-xs">
-          <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
-        </p>
-
-
-
-  <!-- JavaScript jQuery code from Bootply.com editor  -->
-
-  <script type="text/javascript">
-
-    $(document).ready(function() {
-      $('[data-toggle=offcanvas]').click(function() {
-        $('.row-offcanvas').toggleClass('active');
-      });
-    });
-
-  </script>
-
-
-
-</body>
+  </div>
+</div>

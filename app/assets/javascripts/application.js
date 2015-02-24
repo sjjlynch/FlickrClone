@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery.serializeJSON
+//= jquery.hcaptions
 //= require jquery_ujs
 //= require underscore
 //= require backbone

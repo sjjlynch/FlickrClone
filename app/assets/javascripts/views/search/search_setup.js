@@ -10,12 +10,12 @@ FlickrClone.Views.SearchSetup = Backbone.View.extend({
       minLength: 1
     },
     {
-    name: "titles",
-    displayKey: "title",
-    source: substringMatcher(this.collection)
-  }).on('typeahead:selected', function (obj, datum) {
-    Backbone.history.navigate("photos/" + datum.id, { trigger: true })
-  });;
+      name: "titles",
+      displayKey: "title",
+      source: substringMatcher(this.collection)
+    }).on('typeahead:selected', function (obj, datum) {
+      Backbone.history.navigate("photos/" + datum.id, { trigger: true })
+    });;
     return this;
   }
 

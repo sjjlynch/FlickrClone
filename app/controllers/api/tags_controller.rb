@@ -8,7 +8,7 @@ module Api
 
     def new
     end
-    # 
+    #
     # def search
     #   @photos = Tag.search(params)
     #   render json: @photos
@@ -24,6 +24,15 @@ module Api
           status: :unprocessable_entity
         end
     end
+
+    # def search
+    #   @tags = Tag.search(params)
+    #   render :index
+    # end
+    #
+    # def labels
+    #   render json: Tag.where("? IS NULL OR label ~ ?", params[:label], params[:label]).pluck(:label, :id)
+    # end
 
     def show
       @tag = Tag.find(params[:id])

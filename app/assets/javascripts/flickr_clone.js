@@ -9,12 +9,12 @@ window.FlickrClone = {
     new FlickrClone.Routers.Router({
       $rootEl: $("#content"),
       $searchEl: $('.search-wrapper'),
+      $tagsearchEl: $('.tag-search'),
       $galdropEl: $("#galleries-dropdown-menu")
     });
     Backbone.history.start();
   }
 };
-
 
 Backbone.CompositeView = Backbone.View.extend({
   addSubview: function (selector, subview) {
