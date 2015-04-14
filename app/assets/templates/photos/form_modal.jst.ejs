@@ -14,6 +14,7 @@
   <label>Title
     <input type="text" name="photo[title]" placeholder="Title"></label>
   </div>
+  <div class="form-description-modal">
     <label>Description
       <input type="textarea" name="photo[description]" placeholder="Description"></label>
       <select class="form-control" name="photo[gallery_id]">
@@ -23,6 +24,7 @@
           <option value="<%=gallery.id%>"><%= gallery.escape("title") %></option>
       <% }); %>
       </select>
+  </div>
         <div class="form-group">
           <img class="photo-preview-image img-resposive img-thumb" data-src="<%= photo.get('filepicker_url') %>">
         </div>
@@ -34,7 +36,7 @@
       <div class="preview"></div>
 
       <div class="end-modal button">
-        <button type="button" class="btn btn-default end-modal">Exit</button>
+        <button type="button" class="btn btn-default end-modal red-button">Exit</button>
       </div>
 
 </div>

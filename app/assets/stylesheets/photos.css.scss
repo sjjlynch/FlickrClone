@@ -34,13 +34,33 @@
   margin-top: 5px;
 }
 
+// .form-description-modal {
+//   margin-bottom: 25px;
+// }
+//
+// .form-group {
+//   padding-top: 25px;
+// }
+
 .modal-title-text {
   text-align: center;
 }
 
 .submit-modal {
   margin-bottom: 5px;
-  margin-top: 5px;
+  // margin-top: 5px;
+  margin-right: 2px;
+  float: left;
+}
+
+.end-modal {
+  margin-bottom: 5px;
+  // margin-top: 5px;
+  margin-right: 5px;
+  float: right;
+  .red-button {
+    background-color: red;
+  }
 }
 
 .taggings-window {

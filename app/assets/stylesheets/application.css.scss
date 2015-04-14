@@ -27,11 +27,13 @@
 .navbar-brand {
   width: 140px;
   margin-left: 50px;
+
 #flockr-logo-image {
    background-image: url("flockr-logo.png") no-repeat;
    background-repeat:no-repeat;
    background-size:cover;
    background-position:center;
+   margin-top: -10px;
 
 //    /* Preserve aspet ratio */
    min-width: 15%;
